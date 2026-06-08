@@ -6,6 +6,16 @@
 
 :root {
   font-family: sans-serif;
-  background-color: black;
+  background-color: #101010;
   color: slateblue;
+}
+
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
 }

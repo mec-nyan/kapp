@@ -1,0 +1,54 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid hotpink; */
+}
+
+.card {
+  border: 2px solid slateblue;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.kana {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hiragana {
+  font-size: 2rem;
+  font-weight: bold;
+  /* border-bottom: 2px solid slateblue; */
+}
+
+.katakana {
+  font-size: 1.5rem;
+}
+
+.picture {
+  font-size: 7rem;
+  margin: 16px;
+}
+
+.word-example {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-in-kana {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.word-in-romaji {
+  font-size: 1.2rem;
+}
