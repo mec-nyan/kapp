@@ -1,7 +1,7 @@
-import './app.scss'
-import Card from './components/Card'
+import './home.scss'
+import Card from '../features/cards/components/Card'
 
-export function App() {
+export function Home() {
   return (
     <div id='main-container'>
       <h1>Kapp!</h1>
