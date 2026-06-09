@@ -1,10 +1,11 @@
 import './home.scss'
 import Card from '../features/cards/components/Card'
+import TopBar from '../features/shared/components/topBar'
 
 export function Home() {
   return (
     <div id='main-container'>
-      <h1>Kapp!</h1>
+      <TopBar />
 
       <Card
         hiragana='も'
