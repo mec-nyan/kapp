@@ -8,7 +8,7 @@
 }
 
 .card {
-  border: 2px solid slateblue;
+  border: 2px solid var(--mauve);
   border-radius: 8px;
   padding: 32px;
 }
@@ -24,11 +24,13 @@
 .hiragana {
   font-size: 2rem;
   font-weight: bold;
+  color: var(--peach);
   /* border-bottom: 2px solid slateblue; */
 }
 
 .katakana {
   font-size: 1.5rem;
+  color: var(--green);
 }
 
 .picture {
@@ -47,8 +49,10 @@
 .word-in-kana {
   font-size: 2rem;
   font-weight: bold;
+  color: var(--peach);
 }
 
 .word-in-romaji {
   font-size: 1.2rem;
+  color: var(--red);
 }
