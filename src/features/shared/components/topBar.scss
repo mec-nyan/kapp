@@ -1,6 +1,6 @@
 #top-bar {
   width: 100%;
-  height: 96px;
+  height: 100px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   background-color: var(--mantle);
@@ -20,7 +20,7 @@
 }
 
 .app-title {
-  font-family: 'Ubuntu Sans', sans-serif;
+  font-family: 'Playwrite GB J', cursive;
   font-size: 1.5rem;
   font-weight: bold;
   /* font-style: italic; */

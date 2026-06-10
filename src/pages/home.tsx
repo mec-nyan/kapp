@@ -1,6 +1,7 @@
 import './home.scss'
 import Card from '../features/cards/components/Card'
 import TopBar from '../features/shared/components/topBar'
+import Footer from '../features/shared/components/footer'
 
 export function Home() {
   return (
@@ -15,7 +16,7 @@ export function Home() {
         wordInRomaji='momo'
       />
 
-      <footer>Made with 💜 by nano.</footer>
+      <Footer />
     </div>
   )
 }
