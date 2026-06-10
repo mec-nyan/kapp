@@ -6,20 +6,27 @@ export default function TopBar() {
       <div className='top-bar-top-half'>
         <div className='app-title'>Kapp!</div>
         <div className='menu'>
-          <span className='material-symbols-outlined menu-icon'>menu</span>
+          <span className='material-symbols-outlined menu-icon'>more_vert</span>
         </div>
       </div>
 
       <div className='top-bar-bottom-half'>
-        <div id='language-selector'>
-          <span className='material-symbols-outlined language-icon'>
-            translate
+        <div className='quick-settings'>
+          <span className='material-symbols-outlined settings-icon'>
+            settings
           </span>
         </div>
-        <div id='theme-selector'>
-          <span className='material-symbols-outlined theme-icon'>
-            light_mode
-          </span>
+        <div className='selectors'>
+          <div id='language-selector'>
+            <span className='material-symbols-outlined language-icon'>
+              translate
+            </span>
+          </div>
+          <div id='theme-selector'>
+            <span className='material-symbols-outlined theme-icon'>
+              light_mode
+            </span>
+          </div>
         </div>
       </div>
     </div>
