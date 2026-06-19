@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="48"
-   height="48"
-   viewBox="0 0 12.7 12.7"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866667 33.866667"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
-   sodipodi:docname="favicon.svg"
+   sodipodi:docname="kapp-icon.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,16 +23,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
-     inkscape:zoom="16.229167"
-     inkscape:cx="24.061617"
-     inkscape:cy="23.568677"
-     inkscape:window-width="1033"
+     inkscape:zoom="6.0859375"
+     inkscape:cx="64"
+     inkscape:cy="64"
+     inkscape:window-width="1904"
      inkscape:window-height="987"
      inkscape:window-x="26"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
-     showgrid="true">
+     showgrid="false">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -44,9 +44,9 @@
        empopacity="0.30196078"
        color="#0099e5"
        opacity="0.14901961"
-       empspacing="5"
+       empspacing="4"
        enabled="true"
-       visible="true" />
+       visible="false" />
   </sodipodi:namedview>
   <defs
      id="defs1" />
@@ -54,16 +54,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:1;fill:#181825;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+       id="rect1"
+       width="33.866669"
+       height="33.866669"
+       x="0"
+       y="0"
+       ry="4.2333336" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.0452px;font-family:Dejima;-inkscape-font-specification:Dejima;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#f9f9f9;stroke:none;stroke-width:0.349425;stroke-linecap:round;stroke-linejoin:round"
-       x="-0.64872473"
-       y="10.530979"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.7803px;font-family:Dejima;-inkscape-font-specification:Dejima;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#b4befe;stroke:none;stroke-width:0.878047;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+       x="-0.38865161"
+       y="27.170134"
        id="text1"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.0452px;font-family:Dejima;-inkscape-font-specification:Dejima;fill:#f9f9f9;stroke:none;stroke-width:0.349425"
-         x="-0.64872473"
-         y="10.530979">か</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.7803px;font-family:Dejima;-inkscape-font-specification:Dejima;fill:#b4befe;stroke:none;stroke-width:0.878047;fill-opacity:1"
+         x="-0.38865161"
+         y="27.170134">か</tspan></text>
   </g>
 </svg>
