@@ -549,3 +549,21 @@ export const kanaRows = {
 
   // End kana.
 } as const
+
+export const kanaTable = {
+  a: {
+    basic: {
+      monographs: kanaRows.a,
+    },
+  },
+  k: {
+    basic: {
+      monographs: kanaRows.ka,
+      digraphs: kanaRows.kya,
+    },
+    dakuten: {
+      monographs: kanaRows.ga,
+      digraphs: kanaRows.gya,
+    },
+  },
+} as const
