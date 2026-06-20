@@ -851,14 +851,121 @@ const KanaTable = new Map<string, KanaSet>([
     'a',
     {
       Basic: {
-        Monographs: [
-          {
-            rmj: 'a',
-            alt: null,
-            hg: hiragana.a,
-            kk: katakana.a,
-          },
-        ],
+        Monographs: KanaRows.get('a')!,
+        Digraphs: null,
+      },
+      Dakuten: null,
+      Handakuten: null,
+    },
+  ],
+  [
+    'ka',
+    {
+      Basic: {
+        Monographs: KanaRows.get('ka')!,
+        Digraphs: KanaRows.get('kya')!,
+      },
+      Dakuten: {
+        Monographs: KanaRows.get('ga')!,
+        Digraphs: KanaRows.get('gya')!,
+      },
+      Handakuten: null,
+    },
+  ],
+  [
+    'sa',
+    {
+      Basic: {
+        Monographs: KanaRows.get('sa')!,
+        Digraphs: KanaRows.get('sya')!,
+      },
+      Dakuten: {
+        Monographs: KanaRows.get('za')!,
+        Digraphs: KanaRows.get('zya')!,
+      },
+      Handakuten: null,
+    },
+  ],
+  [
+    'ta',
+    {
+      Basic: {
+        Monographs: KanaRows.get('ta')!,
+        Digraphs: KanaRows.get('tya')!,
+      },
+      Dakuten: {
+        Monographs: KanaRows.get('da')!,
+        Digraphs: KanaRows.get('dya')!,
+      },
+      Handakuten: null,
+    },
+  ],
+  [
+    'na',
+    {
+      Basic: {
+        Monographs: KanaRows.get('na')!,
+        Digraphs: KanaRows.get('nya')!,
+      },
+      Dakuten: null,
+      Handakuten: null,
+    },
+  ],
+  [
+    'ha',
+    {
+      Basic: {
+        Monographs: KanaRows.get('ha')!,
+        Digraphs: KanaRows.get('hya')!,
+      },
+      Dakuten: {
+        Monographs: KanaRows.get('ba')!,
+        Digraphs: KanaRows.get('bya')!,
+      },
+      Handakuten: {
+        Monographs: KanaRows.get('pa')!,
+        Digraphs: KanaRows.get('pya')!,
+      },
+    },
+  ],
+  [
+    'ma',
+    {
+      Basic: {
+        Monographs: KanaRows.get('ma')!,
+        Digraphs: KanaRows.get('mya')!,
+      },
+      Dakuten: null,
+      Handakuten: null,
+    },
+  ],
+  [
+    'ya',
+    {
+      Basic: {
+        Monographs: KanaRows.get('ya')!,
+        Digraphs: null,
+      },
+      Dakuten: null,
+      Handakuten: null,
+    },
+  ],
+  [
+    'ra',
+    {
+      Basic: {
+        Monographs: KanaRows.get('ra')!,
+        Digraphs: KanaRows.get('rya')!,
+      },
+      Dakuten: null,
+      Handakuten: null,
+    },
+  ],
+  [
+    'wa',
+    {
+      Basic: {
+        Monographs: KanaRows.get('wa')!,
         Digraphs: null,
       },
       Dakuten: null,
