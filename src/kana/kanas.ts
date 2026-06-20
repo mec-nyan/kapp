@@ -13,7 +13,7 @@ interface Kana {
   kk: Katakana
 }
 
-type KanaRow = Kana[]
+type KanaRow = Array<Kana | null>
 
 interface KanaGroup {
   Monographs: KanaRow
@@ -111,7 +111,7 @@ const KanaRows = new Map<string, KanaRow>([
       },
       {
         rmj: 'si',
-        alt: '',
+        alt: 'shi',
         hg: hiragana.si,
         kk: katakana.si,
       },
@@ -147,13 +147,13 @@ const KanaRows = new Map<string, KanaRow>([
       },
       {
         rmj: 'ti',
-        alt: '',
+        alt: 'chi',
         hg: hiragana.ti,
         kk: katakana.ti,
       },
       {
         rmj: 'tu',
-        alt: '',
+        alt: 'tsu',
         hg: hiragana.tu,
         kk: katakana.tu,
       },
@@ -225,7 +225,7 @@ const KanaRows = new Map<string, KanaRow>([
       },
       {
         rmj: 'hu',
-        alt: '',
+        alt: 'fu',
         hg: hiragana.hu,
         kk: katakana.hu,
       },
@@ -289,12 +289,14 @@ const KanaRows = new Map<string, KanaRow>([
         hg: hiragana.ya,
         kk: katakana.ya,
       },
+      null,
       {
         rmj: 'yu',
         alt: '',
         hg: hiragana.yu,
         kk: katakana.yu,
       },
+      null,
       {
         rmj: 'yo',
         alt: '',
@@ -349,17 +351,22 @@ const KanaRows = new Map<string, KanaRow>([
         hg: hiragana.wa,
         kk: katakana.wa,
       },
-      {
-        rmj: 'wo',
-        alt: '',
-        hg: hiragana.wo,
-        kk: katakana.wo,
-      },
+      null,
+      // NOTE: I've placed the 'ん' sound inside the 'wa' group for now.
+      // I think that maybe it should be on its own group (even if it is only one sound).
+      // Besides, we may add other sounds to this group (the less common 'we' and 'wi').
       {
         rmj: 'n',
         alt: '',
         hg: hiragana.n,
         kk: katakana.n,
+      },
+      null,
+      {
+        rmj: 'wo',
+        alt: '',
+        hg: hiragana.wo,
+        kk: katakana.wo,
       },
     ],
   ],
@@ -413,7 +420,7 @@ const KanaRows = new Map<string, KanaRow>([
       },
       {
         rmj: 'zi',
-        alt: '',
+        alt: 'ji',
         hg: hiragana.zi,
         kk: katakana.zi,
       },
