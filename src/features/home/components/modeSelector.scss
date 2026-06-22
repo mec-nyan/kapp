@@ -1,6 +1,6 @@
 .mode-selector {
   position: relative;
-  height: 60px;
+  height: 64px;
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,6 +13,7 @@
   cursor: pointer;
   /* background-image: linear-gradient(var(--crust), var(--mantle)); */
   /* border: 1px solid var(--surface0); */
+  /* border: 3px solid red; */
 }
 
 .mode-hiragana-outer,
@@ -88,6 +89,12 @@
 
 .label-in-kana,
 .label-in-romaji {
+  font-family: 'Ubuntu Sans', 'Noto Sans', sans-serif;
+  background: none;
+  transition: color 0.3s ease-in;
+}
+
+.label-in-kana {
   font-family:
     'Cherry Bomb One',
     system-ui,
@@ -101,8 +108,6 @@
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-  background: none;
-  transition: color 0.3s ease-in;
 }
 
 .label-in-kana {
