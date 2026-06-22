@@ -12,17 +12,53 @@ export default function ActionMenu({ kana }: actionMenuProps) {
 
   return (
     <div id='action-menu'>
-      <MenuButton title='Cards' kana={kana} open={open} setOpen={setOpen} />
+      <MenuButton
+        title='Cards'
+        description='Learn one kana at a time.'
+        kana={kana}
+        open={open}
+        setOpen={setOpen}
+      />
 
-      <MenuButton title='Chart' kana={kana} open={open} setOpen={setOpen} />
+      <MenuButton
+        title='Chart'
+        description={`Full ${kana} chart.`}
+        kana={kana}
+        open={open}
+        setOpen={setOpen}
+      />
 
-      <MenuButton title='Drill' kana={kana} open={open} setOpen={setOpen} />
+      <MenuButton
+        title='Drill'
+        description="Challenge yourself and see how much you've learned."
+        kana={kana}
+        open={open}
+        setOpen={setOpen}
+      />
 
-      <MenuButton title='Help' kana={kana} open={open} setOpen={setOpen} />
+      <MenuButton
+        title='Help'
+        description='...'
+        kana={kana}
+        open={open}
+        setOpen={setOpen}
+      />
 
-      <MenuButton title='About' kana={kana} open={open} setOpen={setOpen} />
+      <MenuButton
+        title='About'
+        description='...'
+        kana={kana}
+        open={open}
+        setOpen={setOpen}
+      />
 
-      <MenuButton title='Coffee' kana={kana} open={open} setOpen={setOpen} />
+      <MenuButton
+        title='Coffee'
+        description='...'
+        kana={kana}
+        open={open}
+        setOpen={setOpen}
+      />
     </div>
   )
 }
