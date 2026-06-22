@@ -1,0 +1,80 @@
+.menu-button-outer {
+  width: 64vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  padding: 8px;
+  color: var(--base);
+  border: 2px solid var(--crust);
+  border-radius: 16px;
+}
+
+.menu-button-outer:nth-of-type(1) {
+  background-image: linear-gradient(to bottom left, var(--green), var(--blue));
+}
+
+.menu-button-outer:nth-of-type(2) {
+  background-image: linear-gradient(
+    to bottom left,
+    var(--blue),
+    var(--lavender)
+  );
+}
+
+.menu-button-outer:nth-of-type(3) {
+  background-image: linear-gradient(
+    to bottom left,
+    var(--lavender),
+    var(--mauve)
+  );
+}
+
+.menu-button-outer:nth-of-type(4) {
+  background-image: linear-gradient(to bottom left, var(--mauve), var(--red));
+}
+
+.menu-button-outer:nth-of-type(5) {
+  background-image: linear-gradient(to bottom left, var(--red), var(--peach));
+}
+
+.menu-button-outer:nth-of-type(6) {
+  background-image: linear-gradient(
+    to bottom left,
+    var(--peach),
+    var(--yellow)
+  );
+}
+
+.menu-button-title {
+  background: transparent;
+  font-family: 'Cherry Bomb One';
+  font-size: 2rem;
+  color: var(--text);
+  text-shadow: 1px 2px 3px var(--base);
+}
+
+.menu-button-outer:nth-of-type(1) .menu-button-title {
+  color: var(--green);
+}
+
+.menu-button-outer:nth-of-type(2) .menu-button-title {
+  color: var(--blue);
+}
+
+.menu-button-outer:nth-of-type(3) .menu-button-title {
+  color: var(--mauve);
+}
+
+.menu-button-outer:nth-of-type(4) .menu-button-title {
+  color: var(--red);
+}
+
+.menu-button-outer:nth-of-type(5) .menu-button-title {
+  color: var(--peach);
+}
+
+.menu-button-outer:nth-of-type(6) .menu-button-title {
+  color: var(--yellow);
+}
