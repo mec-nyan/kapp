@@ -4,6 +4,7 @@ import './menuButton.scss'
 interface menuButtonProps {
   title: string
   description: string
+  goLink: string | null
   kana: kanaKind // I'll use `kana` to send to the appropriate page.
   open: string | null
   setOpen: (s: string | null) => void
@@ -12,6 +13,7 @@ interface menuButtonProps {
 export default function MenuButton({
   title,
   description,
+  goLink,
   open,
   setOpen,
 }: menuButtonProps) {
@@ -32,7 +34,7 @@ export default function MenuButton({
         >
           <div className='menu-button-description'>{description}</div>
 
-          <div className='menu-button-go'>Go!</div>
+          {goLink && <div className='menu-button-go'>Go!</div>}
         </div>
       )}
     </div>
