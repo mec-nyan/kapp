@@ -26,13 +26,15 @@ export default function MenuButton({
   return (
     <div className='menu-button-outer' onClick={handleClick}>
       <div className='menu-button-title'>{title}</div>
-      <div
-        className={`menu-button-inner ${open === title ? 'open' : 'closed'}`}
-      >
-        <div className='menu-button-description'>{description}</div>
+      {description !== '' && (
+        <div
+          className={`menu-button-inner ${open === title ? 'open' : 'closed'}`}
+        >
+          <div className='menu-button-description'>{description}</div>
 
-        <div className='menu-button-go'>Go!</div>
-      </div>
+          <div className='menu-button-go'>Go!</div>
+        </div>
+      )}
     </div>
   )
 }

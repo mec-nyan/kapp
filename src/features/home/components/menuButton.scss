@@ -14,39 +14,27 @@
 }
 
 .menu-button-outer:nth-of-type(1) {
-  background-image: linear-gradient(to bottom left, var(--green), var(--blue));
+  background-image: linear-gradient(200deg, var(--green), var(--blue));
 }
 
 .menu-button-outer:nth-of-type(2) {
-  background-image: linear-gradient(
-    to bottom left,
-    var(--blue),
-    var(--lavender)
-  );
+  background-image: linear-gradient(200deg, var(--blue), var(--lavender));
 }
 
 .menu-button-outer:nth-of-type(3) {
-  background-image: linear-gradient(
-    to bottom left,
-    var(--lavender),
-    var(--mauve)
-  );
+  background-image: linear-gradient(200deg, var(--lavender), var(--mauve));
 }
 
 .menu-button-outer:nth-of-type(4) {
-  background-image: linear-gradient(to bottom left, var(--mauve), var(--red));
+  background-image: linear-gradient(200deg, var(--mauve), var(--red));
 }
 
 .menu-button-outer:nth-of-type(5) {
-  background-image: linear-gradient(to bottom left, var(--red), var(--peach));
+  background-image: linear-gradient(200deg, var(--red), var(--peach));
 }
 
 .menu-button-outer:nth-of-type(6) {
-  background-image: linear-gradient(
-    to bottom left,
-    var(--peach),
-    var(--yellow)
-  );
+  background-image: linear-gradient(200deg, var(--peach), var(--yellow));
 }
 
 .menu-button-title {
@@ -103,23 +91,43 @@
 
 /* TODO: Add a nice style for these buttons. */
 .menu-button-go {
-  width: 72px;
+  width: 96px;
   height: 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--base);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  /* background-image: linear-gradient(var(--green), */
-  /* var(--blue)); */
-  border: 1px solid var(--base);
-  box-shadow: 1px 2px 3px var(--crust);
-  /* background-color: var(--text); */
+  font-style: italic;
+  font-family: 'Cherry Bomb One';
   color: var(--base);
-  border-radius: 8px;
-  /* box-shadow: 2px 2px var(--peach); */
+  box-shadow: 6px 5px 0px var(--base);
+  border: 1px solid var(--base);
+}
+
+.menu-button-outer:nth-of-type(1) * .menu-button-go {
+  background-color: var(--blue);
+}
+
+.menu-button-outer:nth-of-type(2) * .menu-button-go {
+  background-color: var(--lavender);
+}
+
+.menu-button-outer:nth-of-type(3) * .menu-button-go {
+  background-color: var(--mauve);
+}
+
+.menu-button-outer:nth-of-type(4) * .menu-button-go {
+  background-color: var(--red);
+}
+
+.menu-button-outer:nth-of-type(5) * .menu-button-go {
+  background-color: var(--peach);
+}
+
+.menu-button-outer:nth-of-type(6) * .menu-button-go {
+  background-color: var(--yellow);
 }
 
 .menu-button-description {

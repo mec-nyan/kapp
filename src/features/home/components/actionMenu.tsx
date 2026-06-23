@@ -38,7 +38,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
 
       <MenuButton
         title='Help'
-        description='...'
+        description=''
         kana={kana}
         open={open}
         setOpen={setOpen}
@@ -46,7 +46,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
 
       <MenuButton
         title='About'
-        description='...'
+        description=''
         kana={kana}
         open={open}
         setOpen={setOpen}
@@ -54,7 +54,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
 
       <MenuButton
         title='Coffee'
-        description='...'
+        description=''
         kana={kana}
         open={open}
         setOpen={setOpen}
