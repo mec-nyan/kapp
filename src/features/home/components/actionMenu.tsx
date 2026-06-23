@@ -16,6 +16,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
         title='Cards'
         description='Learn one kana at a time.'
         goLink='TODO: link to page'
+        hasGoButton={true}
         kana={kana}
         open={open}
         setOpen={setOpen}
@@ -25,6 +26,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
         title='Chart'
         description={`Full ${kana} chart.`}
         goLink='TODO: link to page'
+        hasGoButton={true}
         kana={kana}
         open={open}
         setOpen={setOpen}
@@ -34,6 +36,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
         title='Drill'
         description="Challenge yourself and see how much you've learned."
         goLink='TODO: link to page'
+        hasGoButton={true}
         kana={kana}
         open={open}
         setOpen={setOpen}
@@ -42,7 +45,8 @@ export default function ActionMenu({ kana }: actionMenuProps) {
       <MenuButton
         title='Help'
         description=''
-        goLink={null}
+        goLink=''
+        hasGoButton={false}
         kana={kana}
         open={open}
         setOpen={setOpen}
@@ -50,8 +54,10 @@ export default function ActionMenu({ kana }: actionMenuProps) {
 
       <MenuButton
         title='About'
-        description='Stuff about me and this app will go here...'
-        goLink={null}
+        // description='Stuff about me and this app will go here...'
+        description=''
+        goLink='/about'
+        hasGoButton={false}
         kana={kana}
         open={open}
         setOpen={setOpen}
@@ -60,7 +66,8 @@ export default function ActionMenu({ kana }: actionMenuProps) {
       <MenuButton
         title='Coffee'
         description='Buy me a cofee ☕'
-        goLink={null}
+        goLink=''
+        hasGoButton={false}
         kana={kana}
         open={open}
         setOpen={setOpen}
