@@ -1,3 +1,4 @@
+import type { kanaKind } from '../types/kana'
 import hiragana from './hiragana'
 import katakana from './katakana'
 
@@ -982,3 +983,12 @@ const KanaTable = new Map<string, KanaSet>([
 ])
 
 export default KanaTable
+
+export function inKana(k: kanaKind): string {
+  switch (k) {
+    case 'hiragana':
+      return 'ひらがな'
+    case 'katakana':
+      return 'カタカナ'
+  }
+}

@@ -25,7 +25,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
       <MenuButton
         title='Chart'
         description={`Full ${kana} chart.`}
-        goLink='TODO: link to page'
+        goLink='/chart'
         hasGoButton={true}
         kana={kana}
         open={open}

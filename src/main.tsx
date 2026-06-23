@@ -6,6 +6,7 @@ import { Home } from './pages/home'
 import TopBar from './features/shared/components/topBar'
 import Footer from './features/shared/components/footer'
 import About from './features/about/components/about'
+import Chart from './features/chart/components/chart'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +15,9 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        {/* TODO: I may use a context for 'kana' (hiragana/katakana)
+          as well as for language/theme/settings/etc. */}
+        <Route path='/chart' element={<Chart kana='hiragana' />} />
       </Routes>
       <Footer />
     </BrowserRouter>

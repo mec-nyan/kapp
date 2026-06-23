@@ -1,4 +1,4 @@
-import './Card.scss'
+import './card.scss'
 
 interface CardProps {
   hiragana: string

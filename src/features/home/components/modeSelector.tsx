@@ -1,4 +1,5 @@
 import type { kanaKind } from '../../../types/kana'
+import { inKana } from '../../../kana/kanas'
 import './modeSelector.scss'
 
 export default function ModeSelector({
@@ -22,7 +23,7 @@ export default function ModeSelector({
           onClick={() => setKana('hiragana')}
         >
           <div className={`mode-hiragana ${kana === 'hiragana' && 'active'}`}>
-            <div className='label-in-kana'>ひらがな</div>
+            <div className='label-in-kana'>{inKana('hiragana')}</div>
             <div className='label-in-romaji'>hiragana</div>
           </div>
         </div>
@@ -32,7 +33,7 @@ export default function ModeSelector({
           onClick={() => setKana('katakana')}
         >
           <div className={`mode-katakana ${kana === 'katakana' && 'active'}`}>
-            <div className='label-in-kana'>カタカナ</div>
+            <div className='label-in-kana'>{inKana('katakana')}</div>
             <div className='label-in-romaji'>katakana</div>
           </div>
         </div>
