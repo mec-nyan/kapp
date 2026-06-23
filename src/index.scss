@@ -95,3 +95,11 @@ body {
     'GRAD' 0,
     'opsz' 24;
 }
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 48px;
+  color: var(--lavender);
+}
