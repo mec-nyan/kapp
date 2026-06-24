@@ -7,11 +7,25 @@ type Hiragana = string
 type Katakana = string
 type Romaji = string
 
+// TODO: When adding i18n we must handle the translation to languages other than English.
+// I'm using emojis as pictures.  Maybe I change that later.  Maybe not, they look cute!
+// NOTE: I think of maybe adding a different example for each (katakana and hiragana).
+interface Example {
+  jap: string
+  rmj: string
+  picture: string
+  // TODO: Should we add a translation here?
+}
+
 interface Kana {
   rmj: Romaji
-  alt: Romaji | null
+  alt: Romaji
   hg: Hiragana
   kk: Katakana
+  examples: {
+    hg: Example
+    kk: Example
+  }
 }
 
 type KanaRow = Array<Kana | null>
@@ -37,30 +51,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.a,
         kk: katakana.a,
+        examples: {
+          hg: {
+            jap: 'あひる',
+            rmj: 'ahiru',
+            picture: '🦆',
+          },
+          kk: {
+            jap: 'アイスクリーム',
+            rmj: 'aisukuriimu',
+            picture: '🍦',
+          },
+        },
       },
       {
         rmj: 'i',
         alt: '',
         hg: hiragana.i,
         kk: katakana.i,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'u',
         alt: '',
         hg: hiragana.u,
         kk: katakana.u,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'e',
         alt: '',
         hg: hiragana.e,
         kk: katakana.e,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'o',
         alt: '',
         hg: hiragana.o,
         kk: katakana.o,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -73,30 +147,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ka,
         kk: katakana.ka,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ki',
         alt: '',
         hg: hiragana.ki,
         kk: katakana.ki,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ku',
         alt: '',
         hg: hiragana.ku,
         kk: katakana.ku,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ke',
         alt: '',
         hg: hiragana.ke,
         kk: katakana.ke,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ko',
         alt: '',
         hg: hiragana.ko,
         kk: katakana.ko,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -109,30 +243,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.sa,
         kk: katakana.sa,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'si',
         alt: 'shi',
         hg: hiragana.si,
         kk: katakana.si,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'su',
         alt: '',
         hg: hiragana.su,
         kk: katakana.su,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'se',
         alt: '',
         hg: hiragana.se,
         kk: katakana.se,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'so',
         alt: '',
         hg: hiragana.so,
         kk: katakana.so,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -145,30 +339,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ta,
         kk: katakana.ta,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ti',
         alt: 'chi',
         hg: hiragana.ti,
         kk: katakana.ti,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'tu',
         alt: 'tsu',
         hg: hiragana.tu,
         kk: katakana.tu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'te',
         alt: '',
         hg: hiragana.te,
         kk: katakana.te,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'to',
         alt: '',
         hg: hiragana.to,
         kk: katakana.to,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -181,30 +435,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.na,
         kk: katakana.na,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ni',
         alt: '',
         hg: hiragana.ni,
         kk: katakana.ni,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'nu',
         alt: '',
         hg: hiragana.nu,
         kk: katakana.nu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ne',
         alt: '',
         hg: hiragana.ne,
         kk: katakana.ne,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'no',
         alt: '',
         hg: hiragana.no,
         kk: katakana.no,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -217,30 +531,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ha,
         kk: katakana.ha,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'hi',
         alt: '',
         hg: hiragana.hi,
         kk: katakana.hi,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'hu',
         alt: 'fu',
         hg: hiragana.hu,
         kk: katakana.hu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'he',
         alt: '',
         hg: hiragana.he,
         kk: katakana.he,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ho',
         alt: '',
         hg: hiragana.ho,
         kk: katakana.ho,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -253,30 +627,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ma,
         kk: katakana.ma,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'mi',
         alt: '',
         hg: hiragana.mi,
         kk: katakana.mi,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'mu',
         alt: '',
         hg: hiragana.mu,
         kk: katakana.mu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'me',
         alt: '',
         hg: hiragana.me,
         kk: katakana.me,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'mo',
         alt: '',
         hg: hiragana.mo,
         kk: katakana.mo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -289,6 +723,18 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ya,
         kk: katakana.ya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       null,
       {
@@ -296,6 +742,18 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.yu,
         kk: katakana.yu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       null,
       {
@@ -303,6 +761,18 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.yo,
         kk: katakana.yo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -315,30 +785,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ra,
         kk: katakana.ra,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ri',
         alt: '',
         hg: hiragana.ri,
         kk: katakana.ri,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ru',
         alt: '',
         hg: hiragana.ru,
         kk: katakana.ru,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 're',
         alt: '',
         hg: hiragana.re,
         kk: katakana.re,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ro',
         alt: '',
         hg: hiragana.ro,
         kk: katakana.ro,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -351,6 +881,18 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.wa,
         kk: katakana.wa,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       null,
       // NOTE: I've placed the 'ん' sound inside the 'wa' group for now.
@@ -361,6 +903,18 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.n,
         kk: katakana.n,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       null,
       {
@@ -368,6 +922,18 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.wo,
         kk: katakana.wo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -382,30 +948,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ga,
         kk: katakana.ga,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'gi',
         alt: '',
         hg: hiragana.gi,
         kk: katakana.gi,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'gu',
         alt: '',
         hg: hiragana.gu,
         kk: katakana.gu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ge',
         alt: '',
         hg: hiragana.ge,
         kk: katakana.ge,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'go',
         alt: '',
         hg: hiragana.go,
         kk: katakana.go,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -418,30 +1044,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.za,
         kk: katakana.za,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'zi',
         alt: 'ji',
         hg: hiragana.zi,
         kk: katakana.zi,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'zu',
         alt: '',
         hg: hiragana.zu,
         kk: katakana.zu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ze',
         alt: '',
         hg: hiragana.ze,
         kk: katakana.ze,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'zo',
         alt: '',
         hg: hiragana.zo,
         kk: katakana.zo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -454,30 +1140,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.da,
         kk: katakana.da,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'di',
         alt: '',
         hg: hiragana.di,
         kk: katakana.di,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'du',
         alt: '',
         hg: hiragana.du,
         kk: katakana.du,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'de',
         alt: '',
         hg: hiragana.de,
         kk: katakana.de,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'do',
         alt: '',
         hg: hiragana.do,
         kk: katakana.do,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -490,30 +1236,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.ba,
         kk: katakana.ba,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'bi',
         alt: '',
         hg: hiragana.bi,
         kk: katakana.bi,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'bu',
         alt: '',
         hg: hiragana.bu,
         kk: katakana.bu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'be',
         alt: '',
         hg: hiragana.be,
         kk: katakana.be,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'bo',
         alt: '',
         hg: hiragana.bo,
         kk: katakana.bo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -528,30 +1334,90 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.pa,
         kk: katakana.pa,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'pi',
         alt: '',
         hg: hiragana.pi,
         kk: katakana.pi,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'pu',
         alt: '',
         hg: hiragana.pu,
         kk: katakana.pu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'pe',
         alt: '',
         hg: hiragana.pe,
         kk: katakana.pe,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'po',
         alt: '',
         hg: hiragana.po,
         kk: katakana.po,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -567,18 +1433,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.kya,
         kk: katakana.kya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'kyu',
         alt: '',
         hg: hiragana.kyu,
         kk: katakana.kyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'kyo',
         alt: '',
         hg: hiragana.kyo,
         kk: katakana.kyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -592,18 +1494,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.sya,
         kk: katakana.sya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'syu',
         alt: '',
         hg: hiragana.syu,
         kk: katakana.syu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'syo',
         alt: '',
         hg: hiragana.syo,
         kk: katakana.syo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -617,18 +1555,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.tya,
         kk: katakana.tya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'tyu',
         alt: '',
         hg: hiragana.tyu,
         kk: katakana.tyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'tyo',
         alt: '',
         hg: hiragana.tyo,
         kk: katakana.tyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -641,18 +1615,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.nya,
         kk: katakana.nya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'nyu',
         alt: '',
         hg: hiragana.nyu,
         kk: katakana.nyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'nyo',
         alt: '',
         hg: hiragana.nyo,
         kk: katakana.nyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -665,18 +1675,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.hya,
         kk: katakana.hya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'hyu',
         alt: '',
         hg: hiragana.hyu,
         kk: katakana.hyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'hyo',
         alt: '',
         hg: hiragana.hyo,
         kk: katakana.hyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -689,18 +1735,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.mya,
         kk: katakana.mya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'myu',
         alt: '',
         hg: hiragana.myu,
         kk: katakana.myu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'myo',
         alt: '',
         hg: hiragana.myo,
         kk: katakana.myo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -713,18 +1795,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.rya,
         kk: katakana.rya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ryu',
         alt: '',
         hg: hiragana.ryu,
         kk: katakana.ryu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'ryo',
         alt: '',
         hg: hiragana.ryo,
         kk: katakana.ryo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -738,18 +1856,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.gya,
         kk: katakana.gya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'gyu',
         alt: '',
         hg: hiragana.gyu,
         kk: katakana.gyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'gyo',
         alt: '',
         hg: hiragana.gyo,
         kk: katakana.gyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -763,18 +1917,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.zya,
         kk: katakana.zya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'zyu',
         alt: '',
         hg: hiragana.zyu,
         kk: katakana.zyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'zyo',
         alt: '',
         hg: hiragana.zyo,
         kk: katakana.zyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -788,18 +1978,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.dya,
         kk: katakana.dya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'dyu',
         alt: '',
         hg: hiragana.dyu,
         kk: katakana.dyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'dyo',
         alt: '',
         hg: hiragana.dyo,
         kk: katakana.dyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -812,18 +2038,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.bya,
         kk: katakana.bya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'byu',
         alt: '',
         hg: hiragana.byu,
         kk: katakana.byu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'byo',
         alt: '',
         hg: hiragana.byo,
         kk: katakana.byo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
@@ -837,18 +2099,54 @@ const KanaRows = new Map<string, KanaRow>([
         alt: '',
         hg: hiragana.pya,
         kk: katakana.pya,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'pyu',
         alt: '',
         hg: hiragana.pyu,
         kk: katakana.pyu,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
       {
         rmj: 'pyo',
         alt: '',
         hg: hiragana.pyo,
         kk: katakana.pyo,
+        examples: {
+          hg: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+          kk: {
+            jap: '',
+            rmj: '',
+            picture: '',
+          },
+        },
       },
     ],
   ],
