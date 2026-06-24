@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router'
-import type { kanaKind } from '../../../types/kana'
 import './chart.scss'
-import { inKana } from '../../../kana/kanas'
+import type { kanaKind } from '../types/kana'
+import { inKana } from '../kana/kanas'
 
 interface ChartProps {
   kana: kanaKind

@@ -5,8 +5,8 @@ import './index.scss'
 import { Home } from './pages/home'
 import TopBar from './features/shared/components/topBar'
 import Footer from './features/shared/components/footer'
-import About from './features/about/components/about'
-import Chart from './features/chart/components/chart'
+import About from './pages/about'
+import Chart from './pages/chart'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
