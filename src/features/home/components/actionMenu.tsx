@@ -15,7 +15,7 @@ export default function ActionMenu({ kana }: actionMenuProps) {
       <MenuButton
         title='Cards'
         description='Learn one kana at a time.'
-        goLink='TODO: link to page'
+        goLink='/cards'
         hasGoButton={true}
         kana={kana}
         open={open}
