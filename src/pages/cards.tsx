@@ -28,6 +28,10 @@ export default function Cards() {
       // Move on to the next row
       newKanaIdx = 0
       newRowIdx++
+
+      if (newRowIdx === keys.length) {
+        newRowIdx = 0
+      }
     }
   }
 
