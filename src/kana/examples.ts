@@ -1,10 +1,11 @@
 import { type Example } from '../types/kana'
 
 export default {
-  // TODO: Add examples for diacritycs and digraphs.
+  // TODO: Add examples for diacritics and digraphs.
   hiragana: new Map<string, Example>([
     [
       'a',
+      // "ari" (ant), "ahiru" (duck)
       {
         jap: '',
         rmj: '',
@@ -12,6 +13,7 @@ export default {
       },
     ],
     [
+      // "ichigo" (strawberry)
       'i',
       {
         jap: '',
@@ -20,6 +22,7 @@ export default {
       },
     ],
     [
+      // "ushi" (cow)
       'u',
       {
         jap: '',
@@ -28,6 +31,7 @@ export default {
       },
     ],
     [
+      // "enpitsu" (pencil)
       'e',
       {
         jap: '',
@@ -36,6 +40,7 @@ export default {
       },
     ],
     [
+      // "onigiri" (rice ball)
       'o',
       {
         jap: '',
@@ -45,6 +50,7 @@ export default {
     ],
 
     [
+      // "kani" (crab)
       'ka',
       {
         jap: '',
@@ -53,6 +59,9 @@ export default {
       },
     ],
     [
+      // "kirin" (giraffe)
+      // "ki" (tree)
+      // "kitsune" (fox)
       'ki',
       {
         jap: '',
@@ -61,6 +70,8 @@ export default {
       },
     ],
     [
+      // "kuma" (bear)
+      // "kuruma" (car)
       'ku',
       {
         jap: '',
@@ -69,6 +80,8 @@ export default {
       },
     ],
     [
+      // "keeki" (cake)
+      // "keito" (wool round thingy...)
       'ke',
       {
         jap: '',
@@ -77,6 +90,8 @@ export default {
       },
     ],
     [
+      // "koohii" (coffee)
+      // "koi" (fish)
       'ko',
       {
         jap: '',
@@ -86,6 +101,7 @@ export default {
     ],
 
     [
+      // "sakana" (fish)
       'sa',
       {
         jap: '',
@@ -94,6 +110,7 @@ export default {
       },
     ],
     [
+      // "sikaku" (square)
       'si',
       {
         jap: '',
@@ -102,6 +119,7 @@ export default {
       },
     ],
     [
+      // "suika" (watermelon)
       'su',
       {
         jap: '',
@@ -110,6 +128,7 @@ export default {
       },
     ],
     [
+      // "semi" (cicada, locust)
       'se',
       {
         jap: '',
@@ -118,6 +137,7 @@ export default {
       },
     ],
     [
+      // "sora" (sky)
       'so',
       {
         jap: '',
@@ -127,6 +147,7 @@ export default {
     ],
 
     [
+      // "taiko" (drum)
       'ta',
       {
         jap: '',
@@ -135,6 +156,7 @@ export default {
       },
     ],
     [
+      // "chizu" (map)
       'ti',
       {
         jap: '',
@@ -143,6 +165,7 @@ export default {
       },
     ],
     [
+      // "tsukue" (desk)
       'tu',
       {
         jap: '',
@@ -151,6 +174,7 @@ export default {
       },
     ],
     [
+      // "te" (hand)
       'te',
       {
         jap: '',
@@ -159,6 +183,7 @@ export default {
       },
     ],
     [
+      // "tokei" (clock)
       'to',
       {
         jap: '',
@@ -168,6 +193,7 @@ export default {
     ],
 
     [
+      // "nashi" (pear)
       'na',
       {
         jap: '',
@@ -176,6 +202,7 @@ export default {
       },
     ],
     [
+      // "nihon" (Japan)
       'ni',
       {
         jap: '',
@@ -192,6 +219,7 @@ export default {
       },
     ],
     [
+      // "neko" (cat)
       'ne',
       {
         jap: '',
@@ -209,6 +237,7 @@ export default {
     ],
 
     [
+      // "hasami" (scissors)
       'ha',
       {
         jap: '',
@@ -217,6 +246,7 @@ export default {
       },
     ],
     [
+      // "hitsuji" (lamb)
       'hi',
       {
         jap: '',
@@ -225,6 +255,7 @@ export default {
       },
     ],
     [
+      // "fuusen" (balloon)
       'hu',
       {
         jap: '',
@@ -233,6 +264,7 @@ export default {
       },
     ],
     [
+      // "hebi" (snake)
       'he',
       {
         jap: '',
@@ -241,6 +273,7 @@ export default {
       },
     ],
     [
+      // "hoshi" (star)
       'ho',
       {
         jap: '',
@@ -250,6 +283,7 @@ export default {
     ],
 
     [
+      // "maddo" (window)
       'ma',
       {
         jap: '',
@@ -258,6 +292,7 @@ export default {
       },
     ],
     [
+      // "mikan" (tangerine)
       'mi',
       {
         jap: '',
@@ -266,6 +301,7 @@ export default {
       },
     ],
     [
+      // "mushi" (insect, bug)
       'mu',
       {
         jap: '',
@@ -274,6 +310,7 @@ export default {
       },
     ],
     [
+      // "me" (eye(s))
       'me',
       {
         jap: '',
@@ -282,6 +319,7 @@ export default {
       },
     ],
     [
+      // "momo" (peach)
       'mo',
       {
         jap: '',
@@ -291,6 +329,7 @@ export default {
     ],
 
     [
+      // "yagi" (goat)
       'ya',
       {
         jap: '',
@@ -299,6 +338,7 @@ export default {
       },
     ],
     [
+      // "yuki" (snow)
       'yu',
       {
         jap: '',
@@ -307,6 +347,7 @@ export default {
       },
     ],
     [
+      // "yoru" (night)
       'yo',
       {
         jap: '',
@@ -316,6 +357,7 @@ export default {
     ],
 
     [
+      // "rakuda" (camel)
       'ra',
       {
         jap: '',
@@ -324,6 +366,7 @@ export default {
       },
     ],
     [
+      // "ringo" (apple)
       'ri',
       {
         jap: '',
@@ -332,6 +375,7 @@ export default {
       },
     ],
     [
+      // "kaeru" (frog?)
       'ru',
       {
         jap: '',
@@ -340,6 +384,7 @@ export default {
       },
     ],
     [
+      // "reizouko" (fridge)
       're',
       {
         jap: '',
@@ -348,6 +393,7 @@ export default {
       },
     ],
     [
+      // "rousoku" (candle)
       'ro',
       {
         jap: '',
@@ -357,6 +403,7 @@ export default {
     ],
 
     [
+      // "wani" (crocodile)
       'wa',
       {
         jap: '',
@@ -373,6 +420,7 @@ export default {
       },
     ],
     [
+      // "hon" (book)
       'n',
       {
         jap: '',
