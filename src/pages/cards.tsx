@@ -8,6 +8,8 @@ export default function Cards() {
   const [rowIdx, setRowIdx] = useState(0)
   const [kanaIdx, setKanaIdx] = useState(0)
 
+  // TODO: It may be a good idea to provide functions or [a class with] methods like `next` and
+  // `previous` in the `kanas` module.
   const handleNext = () => {
     let newKanaIdx = kanaIdx + 1
     let newRowIdx = rowIdx
@@ -35,7 +37,32 @@ export default function Cards() {
     }
   }
 
-  const handlePrevious = () => {}
+  const handlePrevious = () => {
+    let newKanaIdx = kanaIdx - 1
+    let newRowIdx = rowIdx
+
+    while (true) {
+      let tempRow = KanaTable.get(keys[newRowIdx])!.Basic.Monographs
+
+      while (newKanaIdx >= 0) {
+        // We find a valid kana!
+        if (tempRow.at(newKanaIdx) !== null) {
+          setRowIdx(newRowIdx)
+          setKanaIdx(newKanaIdx)
+          return
+        }
+        newKanaIdx--
+      }
+
+      // Move on to the next row.  We know for certain that each row has 5 elements.
+      newKanaIdx = 4
+      newRowIdx--
+
+      if (newRowIdx < 0) {
+        newRowIdx = keys.length - 1
+      }
+    }
+  }
 
   // We know for sure that this is a valid key.
   const currentRow = KanaTable.get(keys[rowIdx])!.Basic.Monographs
