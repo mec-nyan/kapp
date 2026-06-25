@@ -1,3 +1,11 @@
+// examples.ts
+//
+// I'll put the example words and illustrations for each kana here so:
+//     - More concise, less cluttering.
+//     - Examples are close to their `sound` and easy to spot.
+//     - These examples can be changed more easily without touching other files.
+//     - The object has fewer fields and it's easier to read and edit.
+
 export default {
   // TODO: Add examples for diacritics and digraphs.
   hiragana: {
@@ -12,24 +20,24 @@ export default {
     // "ichigo" (strawberry)
     // "inu" (dog)
     i: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'いぬ',
+      rmj: 'inu',
+      picture: '🐕',
     },
 
     // "ushi" (cow)
     // "usagi" (bunny)
     u: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'うし',
+      rmj: 'ushi',
+      picture: '🐄',
     },
 
     // "enpitsu" (pencil)
     e: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'えんぴつ',
+      rmj: 'enpitsu',
+      picture: '✏️',
     },
 
     // "onigiri" (rice ball)
@@ -37,9 +45,9 @@ export default {
     // "ookami" (wolf)
     // "oni" (demon)
     o: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'おにぎり',
+      rmj: 'onigiri',
+      picture: '🍙',
     },
 
     // "kani" (crab)
@@ -367,28 +375,29 @@ export default {
       picture: '🍦',
     },
 
+    // TODO: Use different examples for hg and kk (like `aisukuri-mu`).
     i: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'イヌ',
+      rmj: 'inu',
+      picture: '🐕',
     },
 
     u: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ウシ',
+      rmj: 'ushi',
+      picture: '🐄',
     },
 
     e: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'エンピツ',
+      rmj: 'enpitsu',
+      picture: '✏️',
     },
 
     o: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'オニギリ',
+      rmj: 'onigiri',
+      picture: '🍙',
     },
 
     ka: {

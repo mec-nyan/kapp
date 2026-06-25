@@ -1,7 +1,9 @@
 import type { kanaKind, KanaRow, KanaSet } from '../types/kana'
+import examples from './examples'
 import hiragana from './hiragana'
 import katakana from './katakana'
 
+// TODO: Following the model of `examples`, we can try to use an object instead of a Map.
 const KanaRows = new Map<string, KanaRow>([
   // 五十音（ごじゅうおん）Monographs.
   [
@@ -14,14 +16,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.a,
         examples: {
           hg: {
-            jap: 'あひる',
-            rmj: 'ahiru',
-            picture: '🦆',
+            jap: examples.hiragana.a.jap,
+            rmj: examples.hiragana.a.rmj,
+            picture: examples.hiragana.a.picture,
           },
           kk: {
-            jap: 'アイスクリーム',
-            rmj: 'aisukuriimu',
-            picture: '🍦',
+            jap: examples.katakana.a.jap,
+            rmj: examples.katakana.a.rmj,
+            picture: examples.katakana.a.picture,
           },
         },
       },
@@ -32,14 +34,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.i,
         examples: {
           hg: {
-            jap: 'いぬ',
-            rmj: 'inu',
-            picture: '🐕',
+            jap: examples.hiragana.i.jap,
+            rmj: examples.hiragana.i.rmj,
+            picture: examples.hiragana.i.picture,
           },
           kk: {
-            jap: 'イヌ',
-            rmj: 'inu',
-            picture: '🐕',
+            jap: examples.katakana.i.jap,
+            rmj: examples.katakana.i.rmj,
+            picture: examples.katakana.a.picture,
           },
         },
       },
@@ -50,14 +52,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.u,
         examples: {
           hg: {
-            jap: 'うし',
-            rmj: 'ushi',
-            picture: '🐄',
+            jap: examples.hiragana.u.jap,
+            rmj: examples.hiragana.u.rmj,
+            picture: examples.hiragana.u.picture,
           },
           kk: {
-            jap: 'ウシ',
-            rmj: 'ushi',
-            picture: '🐄',
+            jap: examples.katakana.u.jap,
+            rmj: examples.katakana.u.rmj,
+            picture: examples.katakana.u.picture,
           },
         },
       },
@@ -68,14 +70,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.e,
         examples: {
           hg: {
-            jap: 'えんぴつ',
-            rmj: 'enpitsu',
-            picture: '✏️',
+            jap: examples.hiragana.e.jap,
+            rmj: examples.hiragana.e.rmj,
+            picture: examples.hiragana.e.picture,
           },
           kk: {
-            jap: 'エンピツ',
-            rmj: 'enpitsu',
-            picture: '✏️',
+            jap: examples.katakana.e.jap,
+            rmj: examples.katakana.e.rmj,
+            picture: examples.katakana.e.picture,
           },
         },
       },
@@ -86,14 +88,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.o,
         examples: {
           hg: {
-            jap: 'おにぎり',
-            rmj: 'onigiri',
-            picture: '🍙',
+            jap: examples.hiragana.o.jap,
+            rmj: examples.hiragana.o.rmj,
+            picture: examples.hiragana.o.picture,
           },
           kk: {
-            jap: 'オニギリ',
-            rmj: 'onigiri',
-            picture: '🍙',
+            jap: examples.katakana.o.jap,
+            rmj: examples.katakana.o.rmj,
+            picture: examples.katakana.o.picture,
           },
         },
       },
