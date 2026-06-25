@@ -1,46 +1,6 @@
-import type { kanaKind } from '../types/kana'
+import type { kanaKind, KanaRow, KanaSet } from '../types/kana'
 import hiragana from './hiragana'
 import katakana from './katakana'
-
-// Some type aliases for clarity.
-type Hiragana = string
-type Katakana = string
-type Romaji = string
-
-// TODO: When adding i18n we must handle the translation to languages other than English.
-// I'm using emojis as pictures.  Maybe I change that later.  Maybe not, they look cute!
-// NOTE: I think of maybe adding a different example for each (katakana and hiragana).
-interface Example {
-  jap: string
-  rmj: string
-  picture: string
-  // TODO: Should we add a translation here?
-}
-
-// TODO: Place types on their own files.
-export type Kana = {
-  rmj: Romaji
-  alt: Romaji
-  hg: Hiragana
-  kk: Katakana
-  examples: {
-    hg: Example
-    kk: Example
-  }
-}
-
-type KanaRow = Array<Kana | null>
-
-interface KanaGroup {
-  Monographs: KanaRow
-  Digraphs: KanaRow | null
-}
-
-interface KanaSet {
-  Basic: KanaGroup
-  Dakuten: KanaGroup | null
-  Handakuten: KanaGroup | null
-}
 
 const KanaRows = new Map<string, KanaRow>([
   // 五十音（ごじゅうおん）Monographs.

@@ -1,5 +1,5 @@
+import type { Kana } from '../../../types/kana'
 import './card.scss'
-import type { Kana } from '../../../kana/kanas'
 
 interface CardProps {
   kana: Kana

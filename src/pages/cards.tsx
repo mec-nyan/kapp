@@ -15,7 +15,7 @@ export default function Cards() {
     let newRowIdx = rowIdx
 
     while (true) {
-      let tempRow = KanaTable.get(keys[newRowIdx])!.Basic.Monographs
+      const tempRow = KanaTable.get(keys[newRowIdx])!.Basic.Monographs
 
       while (newKanaIdx < tempRow.length) {
         // We find a valid kana!
@@ -42,7 +42,7 @@ export default function Cards() {
     let newRowIdx = rowIdx
 
     while (true) {
-      let tempRow = KanaTable.get(keys[newRowIdx])!.Basic.Monographs
+      const tempRow = KanaTable.get(keys[newRowIdx])!.Basic.Monographs
 
       while (newKanaIdx >= 0) {
         // We find a valid kana!
