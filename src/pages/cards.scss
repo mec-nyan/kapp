@@ -31,4 +31,6 @@
   color: var(--base);
   border: 1px solid var(--crust);
   box-shadow: 8px 8px 0 var(--crust);
+  cursor: pointer;
+  user-select: none;
 }
