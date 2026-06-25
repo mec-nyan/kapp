@@ -73,13 +73,7 @@ export default function Cards() {
     <div id='cards-page'>
       {/* TODO: We may need a page title/header, home button, etc.
       We'll also need to add a switch for kk/hg.  */}
-      <Card
-        hiragana={kana.hg}
-        katakana={kana.kk}
-        picture={kana.examples.hg.picture || '🫥'}
-        wordInHiragana={kana.examples.hg.jap || '...'}
-        wordInRomaji={kana.examples.hg.rmj || '...'}
-      />
+      <Card kana={kana} />
 
       <div className='cards-navigation-buttons'>
         <div className='card-previous' onClick={handlePrevious}>

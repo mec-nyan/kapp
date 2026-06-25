@@ -17,7 +17,8 @@ interface Example {
   // TODO: Should we add a translation here?
 }
 
-interface Kana {
+// TODO: Place types on their own files.
+export type Kana = {
   rmj: Romaji
   alt: Romaji
   hg: Hiragana
@@ -71,14 +72,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.i,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'いぬ',
+            rmj: 'inu',
+            picture: '🐕',
           },
           kk: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'イヌ',
+            rmj: 'inu',
+            picture: '🐕',
           },
         },
       },
@@ -89,14 +90,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.u,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'うし',
+            rmj: 'ushi',
+            picture: '🐄',
           },
           kk: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'ウシ',
+            rmj: 'ushi',
+            picture: '🐄',
           },
         },
       },
@@ -107,14 +108,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.e,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'えんぴつ',
+            rmj: 'enpitsu',
+            picture: '✏️',
           },
           kk: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'エンピツ',
+            rmj: 'enpitsu',
+            picture: '✏️',
           },
         },
       },
@@ -125,14 +126,14 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.o,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'おにぎり',
+            rmj: 'onigiri',
+            picture: '🍙',
           },
           kk: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: 'オニギリ',
+            rmj: 'onigiri',
+            picture: '🍙',
           },
         },
       },

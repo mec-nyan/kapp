@@ -33,9 +33,23 @@
   color: var(--green);
 }
 
+.romaji {
+  font-size: 1.5rem;
+  color: var(--lavender);
+}
+
 .picture {
   font-size: 7rem;
+  height: 11rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 16px;
+  /* background-image: linear-gradient(0.6turn, var(--blue), */
+  /* var(--base)60%); */
+  /* border-radius: 50%; */
 }
 
 .word-example {
