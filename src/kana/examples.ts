@@ -54,9 +54,9 @@ export default {
     // "kame" (turtle)
     // "kaeru" (frog)
     ka: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'かに',
+      rmj: 'kani',
+      picture: '🦀',
     },
 
     // "kirin" (giraffe)
@@ -64,34 +64,34 @@ export default {
     // "kitsune" (fox)
     // "kinoko" (mushroom)
     ki: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'きつね',
+      rmj: 'kitsune',
+      picture: '🦊',
     },
 
     // "kuma" (bear)
     // "kuruma" (car)
     ku: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'くま',
+      rmj: 'kuma',
+      picture: '🐻',
     },
 
     // "keeki" (cake)
     // "keito" (wool, yarn)
     ke: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'けーき',
+      rmj: 'keeki',
+      picture: '🍰',
     },
 
     // "koohii" (coffee)
     // "koi" (fish)
     // "koara" (koala)
     ko: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'こーひー',
+      rmj: 'koohii',
+      picture: '☕',
     },
 
     // "sakana" (fish)
