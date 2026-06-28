@@ -208,9 +208,9 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.sa,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: examples.hiragana.sa.jap,
+            rmj: examples.hiragana.sa.rmj,
+            picture: examples.hiragana.sa.picture,
           },
           kk: {
             jap: '',
@@ -226,9 +226,9 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.si,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: examples.hiragana.si.jap,
+            rmj: examples.hiragana.si.rmj,
+            picture: examples.hiragana.si.picture,
           },
           kk: {
             jap: '',
@@ -244,9 +244,9 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.su,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: examples.hiragana.su.jap,
+            rmj: examples.hiragana.su.rmj,
+            picture: examples.hiragana.su.picture,
           },
           kk: {
             jap: '',
@@ -262,9 +262,9 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.se,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: examples.hiragana.se.jap,
+            rmj: examples.hiragana.se.rmj,
+            picture: examples.hiragana.se.picture,
           },
           kk: {
             jap: '',
@@ -280,9 +280,9 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.so,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: examples.hiragana.so.jap,
+            rmj: examples.hiragana.so.rmj,
+            picture: examples.hiragana.so.picture,
           },
           kk: {
             jap: '',
