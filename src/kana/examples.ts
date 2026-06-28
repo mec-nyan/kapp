@@ -137,16 +137,16 @@ export default {
     // "taiko" (drum)
     // "taiyou" (sun)
     ta: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'たいよう',
+      rmj: 'taiyou',
+      picture: '🌞',
     },
 
     // "chizu" (map)
     ti: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ちず',
+      rmj: 'chizu',
+      picture: '🗺️',
     },
 
     // "tsukue" (desk)
@@ -158,18 +158,18 @@ export default {
 
     // "te" (hand)
     te: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'て',
+      rmj: 'te',
+      picture: '🖐',
     },
 
     // "tokei" (clock)
     // "tori" (bird)
     // "torii" (shinto shrine)
     to: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'とりい',
+      rmj: 'torii',
+      picture: '⛩️',
     },
 
     // "nashi" (pear)
