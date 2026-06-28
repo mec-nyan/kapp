@@ -97,40 +97,41 @@ export default {
     // "sakana" (fish)
     // "saikoro" (dice, die)
     sa: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'さかな',
+      rmj: 'sakana',
+      picture: '🐟',
     },
 
     // "sikaku" (square)
     // "shimauma" (zebra) (kk)
     si: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'しまうま',
+      rmj: 'shimauma',
+      picture: '🦓',
     },
 
     // "suika" (watermelon)
     su: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'すいか',
+      rmj: 'suika',
+      picture: '🍉',
     },
 
     // "semi" (cicada, locust)
     // "sentaku" (laundry)
+    // "sekai" (world, universe)
     se: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'せかい',
+      rmj: 'sekai',
+      picture: '🌎',
     },
 
     // "sora" (sky)
     // "sofutokuriimu" (soft ice cream)
     so: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'そふとくりーむ',
+      rmj: 'sofutokuriimu',
+      picture: '🍦',
     },
 
     // "taiko" (drum)
