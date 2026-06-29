@@ -150,17 +150,18 @@ export default {
     },
 
     // "tsukue" (desk)
+    // "tsuki" (moon)
     tu: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'つき',
+      rmj: 'tsuki',
+      picture: '🌕',
     },
 
     // "te" (hand)
     te: {
       jap: 'て',
       rmj: 'te',
-      picture: '🖐',
+      picture: '✋',
     },
 
     // "tokei" (clock)
