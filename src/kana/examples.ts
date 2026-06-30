@@ -176,39 +176,40 @@ export default {
     // "nashi" (pear)
     // "nasu" (egg plant)
     na: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'なす',
+      rmj: 'nasu',
+      picture: '🍆',
     },
 
     // "nihon" (Japan)
     // "niji" (rainbow)
     ni: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'にほん',
+      rmj: 'nihon',
+      picture: '🗾',
     },
 
     // "nuigurumi" (stuffed toy, plush toy)
     nu: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ぬいぐるみ',
+      rmj: 'nuigurumi',
+      picture: '🧸',
     },
 
     // "neko" (cat)
     // "negi" (welsh onion)
     ne: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ねこ',
+      rmj: 'neko',
+      picture: '🐈‍⬛',
     },
 
     // "nohara" (field, prairie)
+    // "nokogiri" (saw)
     no: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'のこぎり',
+      rmj: 'nokogiri',
+      picture: '🪚',
     },
 
     // "hasami" (scissors)
