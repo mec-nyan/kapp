@@ -136,10 +136,11 @@ export default {
 
     // "taiko" (drum)
     // "taiyou" (sun)
+    // "tako" (octopus)
     ta: {
-      jap: 'たいよう',
-      rmj: 'taiyou',
-      picture: '🌞',
+      jap: 'たこ',
+      rmj: 'tako',
+      picture: '🐙',
     },
 
     // "chizu" (map)
