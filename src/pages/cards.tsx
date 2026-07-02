@@ -46,9 +46,18 @@ export default function Cards() {
     }
   }
 
-  const handlePrevious = () => {
+  const handlePrevious = (row: boolean) => {
     let newKanaIdx = kanaIdx - 1
     let newRowIdx = rowIdx
+
+    if (row) {
+      newKanaIdx = 0
+      newRowIdx--
+
+      if (newRowIdx < 0) {
+        newRowIdx = keys.length - 1
+      }
+    }
 
     while (true) {
       const tempRow = KanaTable.get(keys[newRowIdx])!.Basic.Monographs
@@ -83,7 +92,10 @@ export default function Cards() {
       {/* TODO: We may need a page title/header, home button, etc.
       We'll also need to add a switch for kk/hg.  */}
       <div id='cards-container'>
-        <div className='card-previous-overlay' onClick={handlePrevious}>
+        <div
+          className='card-previous-overlay'
+          onClick={() => handlePrevious(false)}
+        >
           <span className='material-symbols-outlined'>chevron_left</span>
         </div>
 
@@ -96,11 +108,10 @@ export default function Cards() {
 
       {/* I'll add 'next row' and 'prev row' here. */}
       <div className='cards-navigation-buttons'>
-        <div className='card-previous' onClick={handlePrevious}>
+        <div className='card-previous' onClick={() => handlePrevious(true)}>
           <span className='material-symbols-outlined'>chevron_left</span>
           previous
         </div>
-
         <div className='card-next' onClick={() => handleNext(true)}>
           next
           <span className='material-symbols-outlined'>chevron_right</span>
