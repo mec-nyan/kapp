@@ -10,9 +10,18 @@ export default function Cards() {
 
   // TODO: It may be a good idea to provide functions or [a class with] methods like `next` and
   // `previous` in the `kanas` module.
-  const handleNext = () => {
+  const handleNext = (row: boolean) => {
     let newKanaIdx = kanaIdx + 1
     let newRowIdx = rowIdx
+
+    if (row) {
+      newKanaIdx = 0
+      newRowIdx++
+
+      if (newRowIdx === keys.length) {
+        newRowIdx = 0
+      }
+    }
 
     while (true) {
       const tempRow = KanaTable.get(keys[newRowIdx])!.Basic.Monographs
@@ -80,7 +89,7 @@ export default function Cards() {
 
         <Card kana={kana} />
 
-        <div className='card-next-overlay' onClick={handleNext}>
+        <div className='card-next-overlay' onClick={() => handleNext(false)}>
           <span className='material-symbols-outlined'>chevron_right</span>
         </div>
       </div>
@@ -92,7 +101,7 @@ export default function Cards() {
           previous
         </div>
 
-        <div className='card-next' onClick={handleNext}>
+        <div className='card-next' onClick={() => handleNext(true)}>
           next
           <span className='material-symbols-outlined'>chevron_right</span>
         </div>
