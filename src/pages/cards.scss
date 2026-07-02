@@ -34,3 +34,36 @@
   cursor: pointer;
   user-select: none;
 }
+
+#cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .card-next-overlay,
+  .card-previous-overlay {
+    height: 64px;
+    width: 64px;
+    min-height: 64px;
+    min-width: 64px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .card-next-overlay span,
+  .card-previous-overlay span {
+    color: var(--blue);
+    background-color: transparent;
+    font-size: 32px;
+  }
+}

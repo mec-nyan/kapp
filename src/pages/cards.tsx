@@ -73,7 +73,20 @@ export default function Cards() {
     <div id='cards-page'>
       {/* TODO: We may need a page title/header, home button, etc.
       We'll also need to add a switch for kk/hg.  */}
-      <Card kana={kana} />
+      <div id='cards-container'>
+        <div className='card-previous-overlay' onClick={handlePrevious}>
+          <span className='material-symbols-outlined'>chevron_left</span>
+        </div>
+
+        <Card kana={kana} />
+
+        <div
+          className='card-next-overlay material-symbols-outlined'
+          onClick={handleNext}
+        >
+          <span className=''>chevron_right</span>
+        </div>
+      </div>
 
       <div className='cards-navigation-buttons'>
         <div className='card-previous' onClick={handlePrevious}>
