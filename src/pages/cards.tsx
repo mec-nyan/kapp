@@ -80,14 +80,12 @@ export default function Cards() {
 
         <Card kana={kana} />
 
-        <div
-          className='card-next-overlay material-symbols-outlined'
-          onClick={handleNext}
-        >
-          <span className=''>chevron_right</span>
+        <div className='card-next-overlay' onClick={handleNext}>
+          <span className='material-symbols-outlined'>chevron_right</span>
         </div>
       </div>
 
+      {/* I'll add 'next row' and 'prev row' here. */}
       <div className='cards-navigation-buttons'>
         <div className='card-previous' onClick={handlePrevious}>
           <span className='material-symbols-outlined'>chevron_left</span>

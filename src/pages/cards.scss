@@ -36,10 +36,11 @@
 }
 
 #cards-container {
+  /* border: 1px solid red; */
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
   .card-next-overlay,
@@ -54,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--mantle);
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
@@ -65,5 +66,6 @@
     color: var(--blue);
     background-color: transparent;
     font-size: 32px;
+    /* border: 1px solid red; */
   }
 }
