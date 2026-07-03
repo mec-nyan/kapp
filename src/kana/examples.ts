@@ -252,40 +252,40 @@ export default {
 
     // "mado" (window)
     ma: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'まど',
+      rmj: 'mado',
+      picture: '🪟',
     },
 
-    // "mikan" (tangerine)
     // "mizu" (water)
+    // "mikan" (tangerine)
     mi: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'みかん',
+      rmj: 'mikan',
+      picture: '🍊',
     },
 
-    // "mushi" (insect, bug)
     // "muhsimegane" (magnifying glass)
+    // "mushi" (insect, bug)
     mu: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'むし',
+      rmj: 'mushi',
+      picture: '🐛',
     },
 
-    // "me" (eye(s))
     // "megane" (glasses)
+    // "me" (eye(s))
     me: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'め',
+      rmj: 'me',
+      picture: '👁️',
     },
 
     // "momo" (peach)
     mo: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'もも',
+      rmj: 'momo',
+      picture: '🍑',
     },
 
     // "yagi" (goat)
