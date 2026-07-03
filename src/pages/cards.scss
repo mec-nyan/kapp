@@ -19,20 +19,26 @@
 .card-previous,
 .card-next {
   height: 48px;
-  width: 128px;
+  width: 96px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 18px;
-  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
   align-items: center;
-  background-color: var(--mauve);
-  color: var(--base);
-  border: 1px solid var(--crust);
+  background-color: var(--mantle);
+  color: var(--blue);
+  border: 1px solid var(--surface0);
   box-shadow: 8px 8px 0 var(--crust);
   cursor: pointer;
   user-select: none;
+}
+
+.card-previous span,
+.card-next span {
+  font-size: 32px;
+  color: var(--mauve);
 }
 
 #cards-container {

@@ -84,8 +84,20 @@ export default function Cards() {
 
   // We know for sure that this is a valid key.
   const currentRow = KanaTable.get(keys[rowIdx])!.Basic.Monographs
+
   // We know that row[0] is a valid kana.
   const kana = currentRow.at(kanaIdx)!
+
+  // Get the next and previous row first kanas.
+  const prevRowIdx = rowIdx > 0 ? rowIdx - 1 : keys.length - 1
+  const nextRowIdx = rowIdx < keys.length - 1 ? rowIdx + 1 : 0
+
+  const prevRowLabel = KanaTable.get(keys[prevRowIdx])!.Basic.Monographs.at(
+    0
+  )!.hg
+  const nextRowLabel = KanaTable.get(keys[nextRowIdx])!.Basic.Monographs.at(
+    0
+  )!.hg
 
   return (
     <div id='cards-page'>
@@ -110,10 +122,10 @@ export default function Cards() {
       <div className='cards-navigation-buttons'>
         <div className='card-previous' onClick={() => handlePrevious(true)}>
           <span className='material-symbols-outlined'>chevron_left</span>
-          previous
+          {prevRowLabel}
         </div>
         <div className='card-next' onClick={() => handleNext(true)}>
-          next
+          {nextRowLabel}
           <span className='material-symbols-outlined'>chevron_right</span>
         </div>
       </div>
