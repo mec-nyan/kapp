@@ -216,38 +216,38 @@ export default {
     // "hasami" (scissors)
     // "haburashi" (toothbrush)
     ha: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'はぶらし',
+      rmj: 'haburashi',
+      picture: '🪥',
     },
 
     // "hitsuji" (sheep)
     hi: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ひつし',
+      rmj: 'hitsuji',
+      picture: '🐑',
     },
 
     // "fuusen" (balloon)
     hu: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ふうせん',
+      rmj: 'fuusen',
+      picture: '🎈',
     },
 
     // "hebi" (snake)
     he: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'へび',
+      rmj: 'hebi',
+      picture: '🐍',
     },
 
     // "hoshi" (star)
     // "houki" (broom)
     ho: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ほし',
+      rmj: 'hoshi',
+      picture: '🌠',
     },
 
     // "mado" (window)
