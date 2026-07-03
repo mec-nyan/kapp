@@ -290,70 +290,70 @@ export default {
 
     // "yagi" (goat)
     ya: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'やぎ',
+      rmj: 'yagi',
+      picture: '🐐',
     },
 
     // "yuki" (snow)
     yu: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ゆき',
+      rmj: 'yuki',
+      picture: '☃️',
     },
 
-    // "yoru" (night)
     // "yotto" (yacht)
+    // "yoru" (night)
     yo: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'よる',
+      rmj: 'yoru',
+      picture: '🌃',
     },
 
-    // "rakuda" (camel)
     // "raion" (lion)
+    // "rakuda" (camel)
     ra: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'らくだ',
+      rmj: 'rakuda',
+      picture: '🐫',
     },
 
-    // "ringo" (apple)
     // "risu" (squirrel)
+    // "ringo" (apple)
     ri: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'りんご',
+      rmj: 'ringo',
+      picture: '🍎',
     },
 
-    // "kaeru" (frog?)
     // "rubii" (ruby) (kk)
+    // "kaeru" (frog?)
     ru: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'かえる',
+      rmj: 'kaeru',
+      picture: '🐸',
     },
 
     // "reizouko" (fridge)
     // "remon" (lemon) (kk)
     re: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'れもん',
+      rmj: 'remon',
+      picture: '🍋',
     },
 
     // "rousoku" (candle)
     ro: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ろうそく',
+      rmj: 'rousoku',
+      picture: '🕯️',
     },
 
     // "wani" (crocodile)
     wa: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'わに',
+      rmj: 'wani',
+      picture: '🐊',
     },
 
     // "ewokaku" (to draw a picture...)
@@ -366,9 +366,9 @@ export default {
     // "hon" (book)
     // "daikon" (daikon, radish)
     n: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ほん',
+      rmj: 'hon',
+      picture: '📖',
     },
   },
 
