@@ -887,9 +887,9 @@ const KanaRows = new Map<string, KanaRow>([
         kk: katakana.wo,
         examples: {
           hg: {
-            jap: '',
-            rmj: '',
-            picture: '',
+            jap: examples.hiragana.wo.jap,
+            rmj: examples.hiragana.wo.rmj,
+            picture: examples.hiragana.wo.picture,
           },
           kk: {
             jap: '',

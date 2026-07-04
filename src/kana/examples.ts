@@ -357,10 +357,11 @@ export default {
     },
 
     // "ewokaku" (to draw a picture...)
+    // "tewofuru" (to wave one's hand)
     wo: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'てをふる',
+      rmj: 'tewofuru',
+      picture: '👋',
     },
 
     // "hon" (book)
