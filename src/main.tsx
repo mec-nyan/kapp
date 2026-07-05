@@ -8,6 +8,9 @@ import Footer from './features/shared/components/footer'
 import About from './pages/about'
 import Chart from './pages/chart'
 import Cards from './pages/cards'
+import { registerServiceWorker } from './service-worker'
+
+registerServiceWorker()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
