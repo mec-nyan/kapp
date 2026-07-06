@@ -381,28 +381,31 @@ export default {
     },
 
     // TODO: Use different examples for hg and kk (like `aisukuri-mu`).
+    // 'iruka' (dolphin)
     i: {
-      jap: 'イヌ',
-      rmj: 'inu',
-      picture: '🐕',
+      jap: 'イルカ',
+      rmj: 'iruka',
+      picture: '🐬',
     },
 
+    // 'usagi' (rabbit)
     u: {
-      jap: 'ウシ',
-      rmj: 'ushi',
-      picture: '🐄',
+      jap: 'ウサギ',
+      rmj: 'usagi',
+      picture: '🐇',
     },
 
     e: {
-      jap: 'エンピツ',
-      rmj: 'enpitsu',
-      picture: '✏️',
+      jap: '',
+      rmj: '',
+      picture: '',
     },
 
+    // 'oni' (demon)
     o: {
-      jap: 'オニギリ',
-      rmj: 'onigiri',
-      picture: '🍙',
+      jap: '',
+      rmj: '',
+      picture: '',
     },
 
     ka: {
@@ -411,16 +414,18 @@ export default {
       picture: '',
     },
 
+    // 'kirin' (giraffe)
     ki: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'キリン',
+      rmj: 'kirin',
+      picture: '🦒',
     },
 
+    // 'kujira' (whale)
     ku: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'クジラ',
+      rmj: 'kujira',
+      picture: '🐳',
     },
 
     ke: {
@@ -429,10 +434,11 @@ export default {
       picture: '',
     },
 
+    // 'koara' (koala)
     ko: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'コアラ',
+      rmj: 'koara',
+      picture: '🐨',
     },
 
     sa: {
@@ -489,6 +495,7 @@ export default {
       picture: '',
     },
 
+    // 'tomato' (tomato)
     to: {
       jap: '',
       rmj: '',
@@ -597,12 +604,14 @@ export default {
       picture: '',
     },
 
+    // 'yotto' (yatch)
     yo: {
       jap: '',
       rmj: '',
       picture: '',
     },
 
+    // 'raion' (lyon)
     ra: {
       jap: '',
       rmj: '',
@@ -627,9 +636,10 @@ export default {
       picture: '',
     },
 
+    // 'roketto' (rocket)
     ro: {
-      jap: '',
-      rmj: '',
+      jap: 'ロケット',
+      rmj: 'roketto',
       picture: '',
     },
 
