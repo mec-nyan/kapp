@@ -1,0 +1,33 @@
+{
+  "id": "kapp2",
+  "name": "kapp!",
+  "short_name": "kapp!",
+  "description": "Learn ひらがな (hiragana) and カタカナ (katakana).",
+  "scope": "/kapp/",
+  "start_url": "/kapp/",
+  "theme_color": "#1e1e2e",
+  "background_color": "#1e1e2e",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/kapp/icons/kapp-icon.svg",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/kapp/icons/kapp-icon.svg",
+      "sizes": "any",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/kapp/screenshots/kapp-onigiri-screenshot.webp",
+      "sizes": "414x846",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "kapp showing hiragana cards."
+    }
+  ]
+}
