@@ -401,17 +401,17 @@ export default {
       picture: '',
     },
 
-    // 'oni' (demon)
     o: {
       jap: '',
       rmj: '',
       picture: '',
     },
 
+    // 'katatsumuri' (snail)
     ka: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'カタツムリ',
+      rmj: 'katatsumuri',
+      picture: '🐌',
     },
 
     // 'kirin' (giraffe)
@@ -441,16 +441,18 @@ export default {
       picture: '🐨',
     },
 
+    // 'saboten' (cactus)
     sa: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'サボテン',
+      rmj: 'saboten',
+      picture: '🌵',
     },
 
+    // 'sika' (deer)
     si: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'シカ',
+      rmj: 'sika',
+      picture: '🦌',
     },
 
     su: {
@@ -508,10 +510,11 @@ export default {
       picture: '',
     },
 
+    // 'niwatori' (chicken)
     ni: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ニワトリ',
+      rmj: 'niwatori',
+      picture: '🐥',
     },
 
     nu: {
@@ -655,10 +658,11 @@ export default {
       picture: '',
     },
 
+    // 'pan' (bread)
     n: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'パン',
+      rmj: 'pan',
+      picture: '🥖',
     },
   },
 } as const
