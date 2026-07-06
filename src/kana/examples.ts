@@ -497,9 +497,9 @@ export default {
 
     // 'tomato' (tomato)
     to: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'トマト',
+      rmj: 'tomato',
+      picture: '🍅',
     },
 
     na: {
@@ -598,24 +598,24 @@ export default {
       picture: '',
     },
 
+    // 'yu-fuo-' (UFO)
     yu: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ユーフオー',
+      rmj: 'yu-fuo-',
+      picture: '🛸',
     },
 
-    // 'yotto' (yatch)
     yo: {
       jap: '',
       rmj: '',
       picture: '',
     },
 
-    // 'raion' (lyon)
+    // 'raion' (lion)
     ra: {
-      jap: '',
-      rmj: '',
-      picture: '',
+      jap: 'ライオン',
+      rmj: 'raion',
+      picture: '🦁',
     },
 
     ri: {
@@ -640,7 +640,7 @@ export default {
     ro: {
       jap: 'ロケット',
       rmj: 'roketto',
-      picture: '',
+      picture: '🚀',
     },
 
     wa: {
