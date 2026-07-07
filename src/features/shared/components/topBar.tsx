@@ -26,13 +26,13 @@ export default function TopBar() {
           <div className='app-title'>Kapp!</div>
         </div>
 
-        <div className='menu'>
+        <div className='menu inactive'>
           <span className='material-symbols-outlined menu-icon'>more_vert</span>
         </div>
       </div>
 
       <div className='top-bar-bottom-half'>
-        <div className='quick-settings'>
+        <div className='quick-settings inactive'>
           <span className='material-symbols-outlined settings-icon'>
             settings
           </span>
