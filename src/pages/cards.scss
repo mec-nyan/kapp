@@ -2,10 +2,10 @@
   width: 100%;
   height: 100%;
   overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85% 1fr;
+  /* border: 1px solid yellow; */
 }
 
 .cards-navigation-buttons {
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: flex-start;
   /* border: 1px solid yellow; */
 }
 
@@ -42,12 +43,14 @@
 }
 
 #cards-container {
-  /* border: 1px solid red; */
   width: 100%;
+  height: 100%;
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  /* border: 1px solid red; */
 
   .card-next-overlay,
   .card-previous-overlay {
@@ -62,9 +65,11 @@
     justify-content: center;
     align-items: center;
     background-color: var(--mantle);
+    opacity: 0.8;
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
+    z-index: 999;
   }
 
   .card-next-overlay span,

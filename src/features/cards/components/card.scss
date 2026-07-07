@@ -1,5 +1,8 @@
 .card-container {
-  /* width: 100%; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +13,8 @@
 .card {
   border: 2px solid var(--mauve);
   border-radius: 8px;
-  padding: 32px;
+  padding: 3vh 5vw;
+  box-shadow: 8px 12px 4px var(--crust);
 }
 
 .kana {
@@ -22,31 +26,31 @@
 }
 
 .hiragana {
-  font-size: 2rem;
+  font-size: 5vh;
   font-weight: bold;
   color: var(--peach);
   /* border-bottom: 2px solid slateblue; */
 }
 
 .katakana {
-  font-size: 1.5rem;
+  font-size: 5vh;
   color: var(--green);
 }
 
 .romaji {
-  font-size: 1.5rem;
+  font-size: 4vh;
   color: var(--lavender);
 }
 
 .picture {
-  font-size: 7rem;
-  height: 11rem;
-  aspect-ratio: 1;
+  font-size: 16vh;
+  height: 20vh;
+  /* aspect-ratio: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  margin: 2vh;
   /* background-image: linear-gradient(0.6turn, var(--blue), */
   /* var(--base)60%); */
   /* border-radius: 50%; */
@@ -61,12 +65,12 @@
 }
 
 .word-in-kana {
-  font-size: 2rem;
+  font-size: 4vh;
   font-weight: bold;
   color: var(--peach);
 }
 
 .word-in-romaji {
-  font-size: 1.2rem;
+  font-size: 3vh;
   color: var(--red);
 }
