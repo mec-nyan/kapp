@@ -6,20 +6,27 @@ interface CardProps {
 }
 
 export default function Card({ kana }: CardProps) {
+  const hiragana = kana.hg
+  const romaji = kana.alt || kana.rmj
+  const katakana = kana.kk
+  const picture = kana.examples.hg.picture || '🫥'
+  const exJapanese = kana.examples.hg.jap || '...'
+  const exRomaji = `/${kana.examples.hg.rmj || '...'}/`
+
   return (
     <div className='card-container'>
       <div className='card'>
         <div className='kana'>
-          <span className='hiragana'>{kana.hg}</span>
-          <span className='romaji'>{`/${kana.rmj}/`}</span>
-          <span className='katakana'>{kana.kk}</span>
+          <span className='hiragana'>{hiragana}</span>
+          <span className='romaji'>{`/${romaji}/`}</span>
+          <span className='katakana'>{katakana}</span>
         </div>
 
-        <div className='picture'>{kana.examples.hg.picture || '🫥'}</div>
+        <div className='picture'>{picture}</div>
 
         <div className='word-example'>
-          <div className='word-in-kana'>{kana.examples.hg.jap || '...'}</div>
-          <div className='word-in-romaji'>{`/${kana.examples.hg.rmj || '...'}/`}</div>
+          <div className='word-in-kana'>{exJapanese}</div>
+          <div className='word-in-romaji'>{exRomaji}</div>
         </div>
       </div>
     </div>
