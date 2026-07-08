@@ -223,7 +223,7 @@ export default {
 
     // "hitsuji" (sheep)
     hi: {
-      jap: 'ひつし',
+      jap: 'ひつじ',
       rmj: 'hitsuji',
       picture: '🐑',
     },
