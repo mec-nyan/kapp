@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next'
 import './footer.scss'
 
 export default function Footer() {
+  const { t } = useTranslation()
+
   return (
     <div id='footer'>
       <p>
-        Made with{' '}
-        <span className='material-symbols-outlined love'>favorite</span> by{' '}
-        <span className='author'>nano</span>.
+        {t('made_with')}{' '}
+        <span className='material-symbols-outlined love'>favorite</span>{' '}
+        {t('by')} <span className='author'>nano</span>.
       </p>
     </div>
   )
