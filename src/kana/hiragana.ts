@@ -307,4 +307,7 @@ export const hiraganaToRomaji = new Map<string, string>([
   ['ぴょ', 'pyo'],
 
   // End Hiragana.
+
+  // TODO: How to romanise this???
+  ['ー', 'ー'],
 ])
