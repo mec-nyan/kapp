@@ -1,3 +1,4 @@
+import { toRomajiFormmated } from '../../../kana/kanas'
 import type { Kana } from '../../../types/kana'
 import './card.scss'
 
@@ -11,7 +12,8 @@ export default function Card({ kana }: CardProps) {
   const katakana = kana.kk
   const picture = kana.examples.hg.picture || '🫥'
   const exJapanese = kana.examples.hg.jap || '...'
-  const exRomaji = `/${kana.examples.hg.rmj || '...'}/`
+  // const exRomaji = `/${kana.examples.hg.rmj || '...'}/`
+  const exRomaji = toRomajiFormmated(exJapanese)
 
   return (
     <div className='card-container'>
