@@ -1,4 +1,6 @@
 {
-  "made_with": "Made with",
-  "by": "by"
+  "footer": {
+    "made_with": "Made with",
+    "by": "by"
+  }
 }

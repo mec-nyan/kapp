@@ -1,4 +1,6 @@
 {
-  "made_with": "Hecho con",
-  "by": "por"
+  "footer": {
+    "made_with": "Hecho con",
+    "by": "por"
+  }
 }

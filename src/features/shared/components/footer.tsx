@@ -7,9 +7,9 @@ export default function Footer() {
   return (
     <div id='footer'>
       <p>
-        {t('made_with')}{' '}
+        {t('footer.made_with')}{' '}
         <span className='material-symbols-outlined love'>favorite</span>{' '}
-        {t('by')} <span className='author'>nano</span>.
+        {t('footer.by')} <span className='author'>nano</span>.
       </p>
     </div>
   )
