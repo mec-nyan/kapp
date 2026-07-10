@@ -1,0 +1,54 @@
+.lang-switcher {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+
+.lang-popup {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background-color: var(--mantle);
+  border-left: 1px solid var(--surface0);
+  border-right: 1px solid var(--surface0);
+  border-top: none;
+  border-bottom: none;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.lang-popup div {
+  background-color: var(--mantle);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 32px 16px 1fr;
+  padding: 16px;
+  border-bottom: 1px solid var(--surface0);
+  min-width: 150px;
+  transition: background-color 0.3s;
+}
+
+.lang-popup div span {
+  background-color: transparent;
+}
+
+.lang-popup div:hover {
+  background-color: var(--base);
+}
+
+.flag {
+  display: inline;
+}
+
+.lang-name {
+  color: var(--overlay0);
+}
+
+.lang-name.current {
+  color: var(--lavender);
+}
+
+.current-lang {
+  color: var(--lavender);
+}
