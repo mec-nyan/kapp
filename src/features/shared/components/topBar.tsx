@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router'
 import './topBar.scss'
+import LanguageSelector from './languageSelector'
 
 export default function TopBar() {
   const navigate = useNavigate()
@@ -38,11 +39,8 @@ export default function TopBar() {
           </span>
         </div>
         <div className='selectors'>
-          <div id='language-selector'>
-            <span className='material-symbols-outlined language-icon'>
-              translate
-            </span>
-          </div>
+          <LanguageSelector />
+
           <div id='theme-selector'>
             <span className='material-symbols-outlined theme-icon'>
               light_mode

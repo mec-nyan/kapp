@@ -47,7 +47,7 @@ export default function LanguageSelector() {
 
   return (
     <div className='lang-switcher' onClick={handleToggle}>
-      <span className='material-symbols-outlined'>translate</span>
+      <span className='material-symbols-outlined lang-icon'>translate</span>
 
       {isOpen && <div className='lang-popup'>{popupFields}</div>}
     </div>
