@@ -33,9 +33,9 @@ export default function LanguageSelector() {
     },
   ]
 
-  const popupFields = languages.map((field) => {
+  const popupFields = languages.map((field, i) => {
     return (
-      <div onClick={() => handleLanguageChange(field.abbr)}>
+      <div key={i} onClick={() => handleLanguageChange(field.abbr)}>
         <span className='flag'>{field.flag}</span>
         <span className='current-lang'>{lang === field.abbr && '•'}</span>
         <span className={`lang-name ${lang === field.abbr ? 'current' : ''}`}>
