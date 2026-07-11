@@ -104,3 +104,9 @@ body {
   color: var(--lavender);
   /* border: 1px solid red; */
 }
+
+* {
+  /* WARNING: Non standard (yet well supported). */
+  /* Remove the annoying blue "highlight" to every clickable element. */
+  -webkit-tap-highlight-color: transparent;
+}
