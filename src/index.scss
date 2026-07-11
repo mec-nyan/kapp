@@ -1,6 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap'); */
 
+/* TODO: What if we need to self host these? */
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,chevron_left,chevron_right,close,dark_mode,favorite,light_mode,menu,more_vert,settings,translate');
+
+@font-face {
+  font-family: 'Cherry Bomb One';
+  src: url('/assets/fonts/CherryBombOne-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/assets/fonts/LibreBaskerville-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playwrite GB J';
+  src: url('/assets/fonts/PlaywriteGBJ-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   background: transparent;
