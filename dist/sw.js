@@ -1,4 +1,4 @@
-const VERSION = 'v0.0.5'
+const VERSION = 'v0.0.6'
 
 const CACHE_NAME = `kapp-${VERSION}`
 
@@ -9,6 +9,9 @@ const APP_STATIC_RESOURCES = [
   `${GPATH}/index.html`,
   `${GPATH}/assets/index.css`,
   `${GPATH}/assets/index.js`,
+  `${GPATH}/assets/fonts/LibreBaskerville-Italic.woff2`,
+  `${GPATH}/assets/fonts/CherryBombOne-Regular.woff2`,
+  `${GPATH}/assets/fonts/PlaywriteGBJ-Regular.woff2`,
   `${GPATH}/manifest.json`,
   `${GPATH}/icons/kapp-icon.svg`,
   `${GPATH}/screenshots/kapp-onigiri-screenshot.webp`,
