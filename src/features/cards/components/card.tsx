@@ -1,4 +1,4 @@
-import { toRomajiFormmated } from '../../../kana/kanas'
+import { toRomajiFormmated } from '../../../kana/romaji'
 import type { Kana } from '../../../types/kana'
 import './card.scss'
 

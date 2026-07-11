@@ -1,6 +1,6 @@
 import type { kanaKind, KanaRow, KanaSet } from '../types/kana'
 import examples from './examples'
-import hiragana, { hiraganaToRomaji } from './hiragana'
+import hiragana from './hiragana'
 import katakana from './katakana'
 
 // TODO: Following the model of `examples`, we can try to use an object instead of a Map.
@@ -2252,20 +2252,4 @@ export function inKana(k: kanaKind): string {
     case 'katakana':
       return 'カタカナ'
   }
-}
-
-function toRomaji(word: string): string[] {
-  const romaji: string[] = []
-
-  for (const k of word) {
-    romaji.push(hiraganaToRomaji.get(k)!)
-  }
-
-  return romaji
-}
-
-export function toRomajiFormmated(word: string): string {
-  const romaji: string[] = toRomaji(word)
-  const romajiWithSeparators = romaji.join('·')
-  return `/${romajiWithSeparators}/`
 }
