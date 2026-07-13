@@ -1,4 +1,4 @@
-const VERSION = __APP_VERSION__
+const VERSION = '0.0.7-alpha' // TODO: sync with package version.
 
 const CACHE_NAME = `kapp-${VERSION}`
 
