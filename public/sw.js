@@ -1,4 +1,4 @@
-const VERSION = 'v0.0.6'
+const VERSION = __APP_VERSION__
 
 const CACHE_NAME = `kapp-${VERSION}`
 

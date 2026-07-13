@@ -10,6 +10,8 @@ export default function Footer() {
         {t('footer.made_with')}{' '}
         <span className='material-symbols-outlined love'>favorite</span>{' '}
         {t('footer.by')} <span className='author'>nano</span>.
+        <br />
+        <span className='version-number'>2026 v{__APP_VERSION__}</span>
       </p>
     </div>
   )
