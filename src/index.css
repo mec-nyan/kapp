@@ -30,7 +30,7 @@
 :root {
   background: transparent;
 
-  // Catppuccin dark.
+  /* Catppuccin dark. */
   --rosewater: #f5e0dc;
   --flamingo: #f2cdcd;
   --pink: #f5c2e7;
@@ -58,7 +58,7 @@
   --mantle: #181825;
   --crust: #11111b;
 
-  // Catppuccin light.
+  /* Catppuccin light. */
   --latte-rosewater: #dc8a78;
   --latte-flamingo: #dd7878;
   --latte-pink: #ea76cb;
@@ -87,16 +87,6 @@
   --latte-crust: #dce0e8;
 }
 
-@mixin themeDark() {
-  background: var(--base);
-  color: var(--text);
-}
-
-@mixin themeLight() {
-  background: var(--late-base);
-  color: var(--late-text);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -106,7 +96,8 @@
 
 html,
 body {
-  @include themeDark;
+  background: var(--base);
+  color: var(--text);
   font-family: sans-serif;
 }
 
