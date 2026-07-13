@@ -1,6 +1,6 @@
 import { toRomajiFormmated } from '../../../kana/romaji'
 import type { Kana } from '../../../types/kana'
-import './card.scss'
+import './card.css'
 
 interface CardProps {
   kana: Kana

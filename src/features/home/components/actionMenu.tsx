@@ -1,6 +1,6 @@
 import type { kanaKind } from '../../../types/kana'
 import MenuButton from './menuButton'
-import './actionMenu.scss'
+import './actionMenu.css'
 import { useState } from 'react'
 
 interface actionMenuProps {

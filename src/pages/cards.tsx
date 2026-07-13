@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Card from '../features/cards/components/card'
 import KanaTable from '../kana/kanas'
-import './cards.scss'
+import './cards.css'
 
 export default function Cards() {
   const keys = [...KanaTable.keys()]

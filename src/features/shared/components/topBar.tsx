@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router'
-import './topBar.scss'
+import './topBar.css'
 import LanguageSelector from './languageSelector'
 
 export default function TopBar() {

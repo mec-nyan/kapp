@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router'
 import type { kanaKind } from '../../../types/kana'
-import './menuButton.scss'
+import './menuButton.css'
 
 interface menuButtonProps {
   title: string

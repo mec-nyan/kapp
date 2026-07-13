@@ -1,6 +1,6 @@
 import type { kanaKind } from '../../../types/kana'
 import { inKana } from '../../../kana/kanas'
-import './modeSelector.scss'
+import './modeSelector.css'
 
 export default function ModeSelector({
   kana,

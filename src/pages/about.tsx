@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router'
-import './about.scss'
+import './about.css'
 
 export default function About() {
   return (

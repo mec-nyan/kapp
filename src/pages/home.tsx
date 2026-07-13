@@ -1,4 +1,4 @@
-import './home.scss'
+import './home.css'
 import MainMenu from '../features/home/components/mainMenu'
 
 export function Home() {

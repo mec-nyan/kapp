@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import './index.scss'
+import './index.css'
 import './config/i18n'
 import { Home } from './pages/home'
 import TopBar from './features/shared/components/topBar'

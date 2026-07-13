@@ -1,5 +1,5 @@
 import ModeSelector from './modeSelector'
-import './mainMenu.scss'
+import './mainMenu.css'
 import type { kanaKind } from '../../../types/kana'
 import { useState } from 'react'
 import ActionMenu from './actionMenu'

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router'
-import './chart.scss'
+import './chart.css'
 import type { kanaKind } from '../types/kana'
 import { inKana } from '../kana/kanas'
 
