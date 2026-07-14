@@ -27,8 +27,8 @@ export default function Card({ kana }: CardProps) {
         <div className='picture'>{picture}</div>
 
         <div className='word-example'>
-          <div className='word-in-kana'>{exJapanese}</div>
-          <div className='word-in-romaji'>{exRomaji}</div>
+          <div className='in-kana'>{exJapanese}</div>
+          <div className='in-romaji'>{exRomaji}</div>
         </div>
       </div>
     </div>
