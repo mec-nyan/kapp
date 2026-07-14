@@ -106,25 +106,22 @@ export default function Cards() {
       <div id='cards-container'>
         <Card kana={kana} />
 
-        <div
-          className='card-previous-overlay'
-          onClick={() => handlePrevious(false)}
-        >
+        <div className='previous-card' onClick={() => handlePrevious(false)}>
           <span className='material-symbols-outlined'>chevron_left</span>
         </div>
 
-        <div className='card-next-overlay' onClick={() => handleNext(false)}>
+        <div className='next-card' onClick={() => handleNext(false)}>
           <span className='material-symbols-outlined'>chevron_right</span>
         </div>
       </div>
 
       {/* I'll add 'next row' and 'prev row' here. */}
-      <div className='cards-navigation-buttons'>
-        <div className='card-previous' onClick={() => handlePrevious(true)}>
+      <div className='row-buttons'>
+        <div className='previous-row' onClick={() => handlePrevious(true)}>
           <span className='material-symbols-outlined'>chevron_left</span>
           {prevRowLabel}
         </div>
-        <div className='card-next' onClick={() => handleNext(true)}>
+        <div className='next-row' onClick={() => handleNext(true)}>
           {nextRowLabel}
           <span className='material-symbols-outlined'>chevron_right</span>
         </div>
