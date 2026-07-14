@@ -7,29 +7,29 @@
   align-items: center;
   background-color: var(--mantle);
   border-top: 1px solid var(--surface0);
-}
 
-#footer p {
-  font-family: 'Playwrite GB J', cursive;
-  font-size: 0.9rem;
-  color: var(--mauve);
-  opacity: 0.7;
-  text-align: center;
-}
+  p {
+    font-family: 'Playwrite GB J', cursive;
+    font-size: 0.9rem;
+    color: var(--mauve);
+    opacity: 0.7;
+    text-align: center;
 
-.love {
-  font-variation-settings: 'FILL' 1;
-  font-size: 20px;
-  transform: translateY(3px);
-  color: var(--pink);
-}
+    .love {
+      font-variation-settings: 'FILL' 1;
+      font-size: 20px;
+      transform: translateY(3px);
+      color: var(--pink);
+    }
 
-.author {
-  color: var(--blue);
-}
+    .author {
+      color: var(--blue);
+    }
 
-.version-number {
-  /* border: 1px solid red; */
-  font-size: 0.7rem;
-  color: var(--lavender);
+    .version-number {
+      /* border: 1px solid red; */
+      font-size: 0.7rem;
+      color: var(--lavender);
+    }
+  }
 }

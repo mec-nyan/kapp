@@ -14,7 +14,7 @@ export default function TopBar() {
 
   return (
     <div id='top-bar'>
-      <div className='top-bar-top-half'>
+      <div className='top'>
         <div className='title-container'>
           {!isHome && (
             <span
@@ -32,16 +32,17 @@ export default function TopBar() {
         </div>
       </div>
 
-      <div className='top-bar-bottom-half'>
+      <div className='bottom'>
         <div className='quick-settings inactive'>
           <span className='material-symbols-outlined settings-icon'>
             settings
           </span>
         </div>
+
         <div className='selectors'>
           <LanguageSelector />
 
-          <div id='theme-selector'>
+          <div className='theme-selector inactive'>
             <span className='material-symbols-outlined theme-icon'>
               light_mode
             </span>
