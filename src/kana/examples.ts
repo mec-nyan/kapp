@@ -127,11 +127,12 @@ export default {
     },
 
     // "sora" (sky)
-    // "sofutokuriimu" (soft ice cream)
+    // "sofutokuriimu" "そふとくりーむ" (soft ice cream)
+    // "soba"
     so: {
-      jap: 'そふとくりーむ',
-      rmj: 'sofutokuriimu',
-      picture: '🍦',
+      jap: 'そば',
+      rmj: 'soba',
+      picture: '🍜',
     },
 
     // "taiko" (drum)
