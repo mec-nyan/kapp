@@ -12,14 +12,13 @@ interface ChartProps {
 export default function Chart({ kana }: ChartProps) {
   const keys = [...KanaTable.keys()]
 
-  const rows = []
+  const cells = []
 
   for (const key of keys) {
-    const row = []
     const kanas = KanaTable.get(key)!.Basic.Monographs
     for (const kr of kanas) {
       if (kr) {
-        row.push(
+        cells.push(
           <div className='kana-cell'>
             <div className='kana-line'>
               <div className='hiragana'>{kr.hg}</div>
@@ -28,23 +27,23 @@ export default function Chart({ kana }: ChartProps) {
             <div className='picture'>{kr.examples.hg.picture}</div>
             <div className='word'>{kr.examples.hg.jap}</div>
             <div className='romaji'>
-              {toRomajiFormmated(kr.examples.hg.jap)}
+              {toRomajiFormmated(kr.examples.hg.jap).replaceAll('/', '')}
             </div>
           </div>
         )
       } else {
-        row.push(<div className='kana empty'></div>)
+        cells.push(<div className='kana-cell empty'></div>)
       }
     }
-    rows.push(<div className='row'>{row}</div>)
   }
   return (
     <div id='chart-container'>
-      <div className='chart-title'>
-        {inKana(kana)} . {kana.charAt(0).toUpperCase() + kana.slice(1)}
+      <div className='title'>
+        <span>{inKana(kana)}</span>
+        <span>{kana.charAt(0).toUpperCase() + kana.slice(1)}</span>
       </div>
 
-      <div className='chart'>{rows}</div>
+      <div className='chart'>{cells}</div>
 
       <NavLink to='/'>
         <div className='back-button'>

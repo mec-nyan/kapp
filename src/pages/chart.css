@@ -5,93 +5,104 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 48px 0;
   align-items: center;
   /* border: 1px solid crimson; */
 
-  .chart {
+  .title {
     width: 100%;
-    padding: 4vh 2vw;
+    padding: 2vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:
+      'Cherry Bomb One',
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
+    text-shadow: 8px 8px 0 var(--crust);
+    /* border: 1px solid hotpink; */
+
+    :first-child {
+      font-size: 2.2rem;
+      color: var(--mauve);
+    }
+
+    :nth-child(2) {
+      font-size: 1.7rem;
+      /* font-style: italic; */
+    }
+  }
+
+  .chart {
+    width: calc(100% - 4vw);
+    margin: 2vh 2vw 0;
+    padding: 1px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--surface0);
+    gap: 1px;
     /* border: 1px solid yellow; */
 
-    .row {
+    .kana-cell {
       width: 100%;
-      display: grid;
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 2vw;
-      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 1vh 1vw;
+      background-color: var(--base);
 
-      .kana-cell {
+      .kana-line {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        border: 1px solid var(--crust);
-        overflow: hidden;
-        border-radius: 8px;
-        /* border-collapse: collapse; */
+        flex-direction: row;
+        justify-content: space-between;
 
-        .kana-line {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-
-          .hiragana {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--yellow);
-          }
-
-          .katakana {
-            font-size: 0.8rem;
-            font-weight: normal;
-            color: var(--blue);
-          }
-        }
-
-        .picture {
-          /* width: 100%; */
-          font-size: 9vw;
-          /* display: flex; */
-          /* justify-content: center; */
-          /* border: 1px solid blue; */
-        }
-
-        .word {
-          font-size: 0.8rem;
+        .hiragana {
+          font-size: 1.2rem;
+          font-weight: bold;
           color: var(--yellow);
-          margin-bottom: 8px;
         }
 
-        .romaji {
-          font-size: 0.7rem;
-          font-family: 'Libre Baskerville';
-          color: var(--red);
+        .katakana {
+          font-size: 0.8rem;
+          font-weight: normal;
+          color: var(--blue);
         }
+      }
+
+      .picture {
+        /* width: 100%; */
+        font-size: 9vw;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* border: 1px solid blue; */
+      }
+
+      .word {
+        font-size: 0.8rem;
+        color: var(--yellow);
+        margin-bottom: 8px;
+      }
+
+      .romaji {
+        font-size: 0.7rem;
+        font-family: 'Libre Baskerville';
+        color: var(--red);
       }
     }
   }
-}
 
-.chart-title {
-  font-family:
-    'Cherry Bomb One',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 3rem;
-  text-shadow: 8px 8px 0 var(--crust);
+  .back-button {
+    margin: 5vh auto;
+  }
 }
