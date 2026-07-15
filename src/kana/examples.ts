@@ -374,6 +374,376 @@ export default {
     },
   },
 
+  // NOTE: (Maybe temporary) Use the same words for katakana and hiragana.
+  // That way, we can 'switch' mode in place.
+  katakana: {
+    // "ari" (ant)
+    // "ahiru" (duck)
+    a: {
+      jap: 'アヒル',
+      rmj: 'ahiru',
+      picture: '🦆',
+    },
+
+    // "ichigo" (strawberry)
+    // "inu" (dog)
+    i: {
+      jap: 'イヌ',
+      rmj: 'inu',
+      picture: '🐕',
+    },
+
+    // "ushi" (cow)
+    // "usagi" (bunny)
+    u: {
+      jap: 'ウシ',
+      rmj: 'ushi',
+      picture: '🐄',
+    },
+
+    // "enpitsu" (pencil)
+    e: {
+      jap: 'エンピツ',
+      rmj: 'enpitsu',
+      picture: '✏️',
+    },
+
+    // "onigiri" (rice ball)
+    // "obake" (ghost)
+    // "ookami" (wolf)
+    // "oni" (demon)
+    o: {
+      jap: 'オニギリ',
+      rmj: 'onigiri',
+      picture: '🍙',
+    },
+
+    // "kani" (crab)
+    // "kame" (turtle)
+    // "kaeru" (frog)
+    ka: {
+      jap: 'カニ',
+      rmj: 'kani',
+      picture: '🦀',
+    },
+
+    // "kirin" (giraffe)
+    // "ki" (tree)
+    // "kitsune" (fox)
+    // "kinoko" (mushroom)
+    ki: {
+      jap: 'キツネ',
+      rmj: 'kitsune',
+      picture: '🦊',
+    },
+
+    // "kuma" (bear)
+    // "kuruma" (car)
+    ku: {
+      jap: 'クマ',
+      rmj: 'kuma',
+      picture: '🐻',
+    },
+
+    // "keeki" (cake)
+    // "keito" (wool, yarn)
+    ke: {
+      jap: 'ケーキ',
+      rmj: 'keeki',
+      picture: '🍰',
+    },
+
+    // "koohii" (coffee)
+    // "koi" (fish)
+    // "koara" (koala)
+    ko: {
+      jap: 'コーヒー',
+      rmj: 'koohii',
+      picture: '☕',
+    },
+
+    // "sakana" (fish)
+    // "saikoro" (dice, die)
+    sa: {
+      jap: 'サカナ',
+      rmj: 'sakana',
+      picture: '🐟',
+    },
+
+    // "sikaku" (square)
+    // "shimauma" (zebra) (kk)
+    si: {
+      jap: 'シマウマ',
+      rmj: 'shimauma',
+      picture: '🦓',
+    },
+
+    // "suika" (watermelon)
+    su: {
+      jap: 'スイカ',
+      rmj: 'suika',
+      picture: '🍉',
+    },
+
+    // "semi" (cicada, locust)
+    // "sentaku" (laundry)
+    // "sekai" (world, universe)
+    se: {
+      jap: 'セカイ',
+      rmj: 'sekai',
+      picture: '🌎',
+    },
+
+    // "sora" (sky)
+    // "sofutokuriimu" "そふとくりーむ" (soft ice cream)
+    // "soba"
+    so: {
+      jap: 'ソバ',
+      rmj: 'soba',
+      picture: '🍜',
+    },
+
+    // "taiko" (drum)
+    // "taiyou" (sun)
+    // "tako" (octopus)
+    ta: {
+      jap: 'タコ',
+      rmj: 'tako',
+      picture: '🐙',
+    },
+
+    // "chizu" (map)
+    ti: {
+      jap: 'チズ',
+      rmj: 'chizu',
+      picture: '🗺️',
+    },
+
+    // "tsukue" (desk)
+    // "tsuki" (moon)
+    tu: {
+      jap: 'ツキ',
+      rmj: 'tsuki',
+      picture: '🌕',
+    },
+
+    // "te" (hand)
+    te: {
+      jap: 'テ',
+      rmj: 'te',
+      picture: '✋',
+    },
+
+    // "tokei" (clock)
+    // "tori" (bird)
+    // "torii" (shinto shrine)
+    to: {
+      jap: 'トリイ',
+      rmj: 'torii',
+      picture: '⛩️',
+    },
+
+    // "nashi" (pear)
+    // "nasu" (egg plant)
+    na: {
+      jap: 'ナス',
+      rmj: 'nasu',
+      picture: '🍆',
+    },
+
+    // "nihon" (Japan)
+    // "niji" (rainbow)
+    ni: {
+      jap: 'ニホン',
+      rmj: 'nihon',
+      picture: '🗾',
+    },
+
+    // "nuigurumi" (stuffed toy, plush toy)
+    nu: {
+      jap: 'ヌイグルミ',
+      rmj: 'nuigurumi',
+      picture: '🧸',
+    },
+
+    // "neko" (cat)
+    // "negi" (welsh onion)
+    ne: {
+      jap: 'ネコ',
+      rmj: 'neko',
+      picture: '🐈‍⬛',
+    },
+
+    // "nohara" (field, prairie)
+    // "nokogiri" (saw)
+    no: {
+      jap: 'ノコギリ',
+      rmj: 'nokogiri',
+      picture: '🪚',
+    },
+
+    // "hasami" (scissors)
+    // "haburashi" (toothbrush)
+    ha: {
+      jap: 'ハブラシ',
+      rmj: 'haburashi',
+      picture: '🪥',
+    },
+
+    // "hitsuji" (sheep)
+    hi: {
+      jap: 'ヒツジ',
+      rmj: 'hitsuji',
+      picture: '🐑',
+    },
+
+    // "fuusen" (balloon)
+    hu: {
+      jap: 'フウセン',
+      rmj: 'fuusen',
+      picture: '🎈',
+    },
+
+    // "hebi" (snake)
+    he: {
+      jap: 'ヘビ',
+      rmj: 'hebi',
+      picture: '🐍',
+    },
+
+    // "hoshi" (star)
+    // "houki" (broom)
+    ho: {
+      jap: 'ホシ',
+      rmj: 'hoshi',
+      picture: '🌠',
+    },
+
+    // "mado" (window)
+    ma: {
+      jap: 'マド',
+      rmj: 'mado',
+      picture: '🪟',
+    },
+
+    // "mizu" (water)
+    // "mikan" (tangerine)
+    mi: {
+      jap: 'ミカン',
+      rmj: 'mikan',
+      picture: '🍊',
+    },
+
+    // "muhsimegane" (magnifying glass)
+    // "mushi" (insect, bug)
+    mu: {
+      jap: 'ムシ',
+      rmj: 'mushi',
+      picture: '🐛',
+    },
+
+    // "megane" (glasses)
+    // "me" (eye(s))
+    me: {
+      jap: 'メ',
+      rmj: 'me',
+      picture: '👁️',
+    },
+
+    // "momo" (peach)
+    mo: {
+      jap: 'モモ',
+      rmj: 'momo',
+      picture: '🍑',
+    },
+
+    // "yagi" (goat)
+    ya: {
+      jap: 'ヤギ',
+      rmj: 'yagi',
+      picture: '🐐',
+    },
+
+    // "yuki" (snow)
+    yu: {
+      jap: 'ユキ',
+      rmj: 'yuki',
+      picture: '☃️',
+    },
+
+    // "yotto" (yacht)
+    // "yoru" (night)
+    yo: {
+      jap: 'ヨル',
+      rmj: 'yoru',
+      picture: '🌃',
+    },
+
+    // "raion" (lion)
+    // "rakuda" (camel)
+    ra: {
+      jap: 'ラクダ',
+      rmj: 'rakuda',
+      picture: '🐫',
+    },
+
+    // "risu" (squirrel)
+    // "ringo" (apple)
+    ri: {
+      jap: 'リンゴ',
+      rmj: 'ringo',
+      picture: '🍎',
+    },
+
+    // "rubii" (ruby) (kk)
+    // "kaeru" (frog?)
+    ru: {
+      jap: 'カエル',
+      rmj: 'kaeru',
+      picture: '🐸',
+    },
+
+    // "reizouko" (fridge)
+    // "remon" (lemon) (kk)
+    re: {
+      jap: 'レモン',
+      rmj: 'remon',
+      picture: '🍋',
+    },
+
+    // "rousoku" (candle)
+    ro: {
+      jap: 'ロウソク',
+      rmj: 'rousoku',
+      picture: '🕯️',
+    },
+
+    // "wani" (crocodile)
+    wa: {
+      jap: 'ワニ',
+      rmj: 'wani',
+      picture: '🐊',
+    },
+
+    // "ewokaku" (to draw a picture...)
+    // "tewofuru" (to wave one's hand)
+    // NOTE: Not sure about this one though...
+    wo: {
+      jap: 'テヲフル',
+      rmj: 'tewofuru',
+      picture: '👋',
+    },
+
+    // "hon" (book)
+    // "daikon" (daikon, radish)
+    n: {
+      jap: 'ホン',
+      rmj: 'hon',
+      picture: '📖',
+    },
+  },
+
+  /*
   katakana: {
     a: {
       jap: 'アイスクリーム',
@@ -666,4 +1036,5 @@ export default {
       picture: '🥖',
     },
   },
+  */
 } as const
