@@ -1,4 +1,4 @@
 import { createContext } from 'react'
-import type { ModeContextType } from '../types/lang'
+import type { ModeContextType } from '../types/mode'
 
 export const ModeContext = createContext<ModeContextType | undefined>(undefined)

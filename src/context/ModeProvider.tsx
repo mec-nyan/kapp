@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import type { ReactNode } from 'react'
 import { ModeContext } from './ModeContext'
-import type { Mode } from '../types/lang'
+import type { Mode } from '../types/mode'
 
 interface ModeProviderProps {
   children: ReactNode

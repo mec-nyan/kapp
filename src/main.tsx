@@ -24,10 +24,7 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-            {/* TODO: I may use a context for 'kana' (hiragana/katakana)
-          as well as for language/theme/settings/etc. */}
-            <Route path='/chart' element={<Chart kana='hiragana' />} />
-
+            <Route path='/chart' element={<Chart />} />
             <Route path='/cards' element={<Cards />} />
           </Routes>
           <Footer />

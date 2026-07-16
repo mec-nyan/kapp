@@ -1,17 +1,14 @@
 import ModeSelector from './modeSelector'
 import './mainMenu.css'
-import type { kanaKind } from '../../../types/kana'
-import { useState } from 'react'
 import ActionMenu from './actionMenu'
 
 export default function MainMenu() {
-  const [kana, setKana] = useState<kanaKind>('hiragana')
-
   return (
     <div className='main-menu'>
-      <ModeSelector kana={kana} setKana={setKana} />
+      <ModeSelector />
 
-      <ActionMenu kana={kana} />
+      {/* TODO: Remove this prop since we're using a context now. */}
+      <ActionMenu kana={'hiragana'} />
     </div>
   )
 }
