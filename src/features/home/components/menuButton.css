@@ -10,136 +10,127 @@
   border: 2px solid var(--crust);
   border-radius: 16px;
   cursor: pointer;
-  /* overflow: hidden; */
-}
-
-.menu-button-outer:nth-of-type(1) {
   background-image: linear-gradient(200deg, var(--green), var(--blue));
+
+  .title {
+    background: transparent;
+    font-family: 'Cherry Bomb One';
+    font-size: 2rem;
+    color: var(--green);
+    text-shadow: 1px 2px 3px var(--base);
+  }
+
+  .inner {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: height 0.2s ease-in;
+    overflow: hidden;
+    /* border: 1px solid red; */
+
+    &.closed {
+      height: 0px;
+      overflow: hidden;
+    }
+
+    &.open {
+      height: 120px;
+    }
+
+    .description {
+      width: 100%;
+      text-align: center;
+      font-family: 'Playwrite GB J', cursive;
+      font-style: italic;
+    }
+
+    .button-go {
+      width: 96px;
+      height: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-style: italic;
+      font-family: 'Cherry Bomb One';
+      color: var(--base);
+      background-color: var(--blue);
+      box-shadow: 6px 5px 0px var(--base);
+      border: 1px solid var(--base);
+    }
+  }
+
+  .direct-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    /* border: 1px solid green; */
+  }
+  /* overflow: hidden; */
 }
 
 .menu-button-outer:nth-of-type(2) {
   background-image: linear-gradient(200deg, var(--blue), var(--lavender));
+
+  .title {
+    color: var(--blue);
+  }
+
+  * .button-go {
+    background-color: var(--lavender);
+  }
 }
 
 .menu-button-outer:nth-of-type(3) {
   background-image: linear-gradient(200deg, var(--lavender), var(--mauve));
+
+  .title {
+    color: var(--mauve);
+  }
+
+  * .button-go {
+    background-color: var(--mauve);
+  }
 }
 
 .menu-button-outer:nth-of-type(4) {
   background-image: linear-gradient(200deg, var(--mauve), var(--red));
+
+  .title {
+    color: var(--red);
+  }
+
+  * .button-go {
+    background-color: var(--red);
+  }
 }
 
 .menu-button-outer:nth-of-type(5) {
   background-image: linear-gradient(200deg, var(--red), var(--peach));
+
+  .title {
+    color: var(--peach);
+  }
+
+  * .button-go {
+    background-color: var(--peach);
+  }
 }
 
 .menu-button-outer:nth-of-type(6) {
   background-image: linear-gradient(200deg, var(--peach), var(--yellow));
-}
 
-.menu-button-title {
-  background: transparent;
-  font-family: 'Cherry Bomb One';
-  font-size: 2rem;
-  color: var(--text);
-  text-shadow: 1px 2px 3px var(--base);
-}
+  .title {
+    color: var(--yellow);
+  }
 
-.menu-button-outer:nth-of-type(1) .menu-button-title {
-  color: var(--green);
-}
-
-.menu-button-outer:nth-of-type(2) .menu-button-title {
-  color: var(--blue);
-}
-
-.menu-button-outer:nth-of-type(3) .menu-button-title {
-  color: var(--mauve);
-}
-
-.menu-button-outer:nth-of-type(4) .menu-button-title {
-  color: var(--red);
-}
-
-.menu-button-outer:nth-of-type(5) .menu-button-title {
-  color: var(--peach);
-}
-
-.menu-button-outer:nth-of-type(6) .menu-button-title {
-  color: var(--yellow);
-}
-
-.menu-button-inner {
-  background: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: height 0.2s ease-in;
-  overflow: hidden;
-  /* border: 1px solid red; */
-}
-
-.menu-button-inner.closed {
-  height: 0px;
-  overflow: hidden;
-}
-
-.menu-button-inner.open {
-  height: 120px;
-}
-
-/* TODO: Add a nice style for these buttons. */
-.menu-button-go {
-  width: 96px;
-  height: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-style: italic;
-  font-family: 'Cherry Bomb One';
-  color: var(--base);
-  box-shadow: 6px 5px 0px var(--base);
-  border: 1px solid var(--base);
-}
-
-.menu-button-outer:nth-of-type(1) * .menu-button-go {
-  background-color: var(--blue);
-}
-
-.menu-button-outer:nth-of-type(2) * .menu-button-go {
-  background-color: var(--lavender);
-}
-
-.menu-button-outer:nth-of-type(3) * .menu-button-go {
-  background-color: var(--mauve);
-}
-
-.menu-button-outer:nth-of-type(4) * .menu-button-go {
-  background-color: var(--red);
-}
-
-.menu-button-outer:nth-of-type(5) * .menu-button-go {
-  background-color: var(--peach);
-}
-
-.menu-button-outer:nth-of-type(6) * .menu-button-go {
-  background-color: var(--yellow);
-}
-
-.menu-button-description {
-  width: 100%;
-  text-align: center;
-}
-
-.direct-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  /* border: 1px solid green; */
+  * .button-go {
+    background-color: var(--yellow);
+  }
 }

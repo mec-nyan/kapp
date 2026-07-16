@@ -32,12 +32,10 @@ export default function MenuButton({
   if (goLink === '') {
     return (
       <div className='menu-button-outer' onClick={handleClick}>
-        <div className='menu-button-title'>{title}</div>
+        <div className='title'>{title}</div>
         {description !== '' && (
-          <div
-            className={`menu-button-inner ${open === title ? 'open' : 'closed'}`}
-          >
-            <div className='menu-button-description'>{description}</div>
+          <div className={`inner ${open === title ? 'open' : 'closed'}`}>
+            <div className='description'>{description}</div>
           </div>
         )}
       </div>
@@ -49,15 +47,13 @@ export default function MenuButton({
   if (hasGoButton) {
     return (
       <div className='menu-button-outer' onClick={handleClick}>
-        <div className='menu-button-title'>{title}</div>
+        <div className='title'>{title}</div>
         {description !== '' && (
-          <div
-            className={`menu-button-inner ${open === title ? 'open' : 'closed'}`}
-          >
-            <div className='menu-button-description'>{description}</div>
+          <div className={`inner ${open === title ? 'open' : 'closed'}`}>
+            <div className='description'>{description}</div>
 
             <Link to={goLink}>
-              <div className='menu-button-go'>Go!</div>
+              <div className='button-go'>Go!</div>
             </Link>
           </div>
         )}
@@ -69,7 +65,7 @@ export default function MenuButton({
   return (
     <div className='menu-button-outer' onClick={handleClick}>
       <NavLink to={goLink} className='direct-link'>
-        <div className='menu-button-title'>{title}</div>
+        <div className='title'>{title}</div>
       </NavLink>
     </div>
   )
