@@ -4,6 +4,7 @@ import KanaTable from '../kana/kanas'
 import { inKana } from '../kana/kanas'
 import { toRomajiFormmated } from '../kana/romaji'
 import { useMode } from '../hooks/useMode'
+import Footer from '../features/shared/components/footer'
 
 export default function Chart() {
   const { mode } = useMode()
@@ -75,6 +76,8 @@ export default function Chart() {
           Back
         </div>
       </NavLink>
+
+      <Footer />
     </div>
   )
 }
