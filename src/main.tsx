@@ -11,6 +11,7 @@ import Chart from './pages/chart'
 import Cards from './pages/cards'
 import { registerServiceWorker } from './service-worker'
 import LanguageProvider from './context/LanguageProvider'
+import ModeProvider from './context/ModeProvider'
 
 registerServiceWorker()
 
@@ -18,17 +19,19 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <LanguageProvider initialLang='en'>
-        <TopBar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          {/* TODO: I may use a context for 'kana' (hiragana/katakana)
+        <ModeProvider initialMode='hiragana'>
+          <TopBar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            {/* TODO: I may use a context for 'kana' (hiragana/katakana)
           as well as for language/theme/settings/etc. */}
-          <Route path='/chart' element={<Chart kana='hiragana' />} />
+            <Route path='/chart' element={<Chart kana='hiragana' />} />
 
-          <Route path='/cards' element={<Cards />} />
-        </Routes>
-        <Footer />
+            <Route path='/cards' element={<Cards />} />
+          </Routes>
+          <Footer />
+        </ModeProvider>
       </LanguageProvider>
     </BrowserRouter>
   </StrictMode>
