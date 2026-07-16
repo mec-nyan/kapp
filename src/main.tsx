@@ -5,7 +5,6 @@ import './index.css'
 import './config/i18n'
 import { Home } from './pages/home'
 import TopBar from './features/shared/components/topBar'
-import Footer from './features/shared/components/footer'
 import About from './pages/about'
 import Chart from './pages/chart'
 import Cards from './pages/cards'
@@ -27,7 +26,6 @@ createRoot(document.getElementById('root')!).render(
             <Route path='/chart' element={<Chart />} />
             <Route path='/cards' element={<Cards />} />
           </Routes>
-          <Footer />
         </ModeProvider>
       </LanguageProvider>
     </BrowserRouter>
