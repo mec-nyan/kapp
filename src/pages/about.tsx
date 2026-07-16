@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router'
 import './about.css'
+import Footer from '../features/shared/components/footer'
 
 export default function About() {
   return (
@@ -12,6 +13,8 @@ export default function About() {
           Back
         </div>
       </NavLink>
+
+      <Footer />
     </div>
   )
 }

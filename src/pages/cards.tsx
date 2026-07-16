@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Card from '../features/cards/components/card'
 import KanaTable from '../kana/kanas'
 import './cards.css'
+import Footer from '../features/shared/components/footer'
 
 export default function Cards() {
   const keys = [...KanaTable.keys()]
@@ -126,6 +127,10 @@ export default function Cards() {
           <span className='material-symbols-outlined'>chevron_right</span>
         </div>
       </div>
+
+      {/* TODO: Maybe we don't need the footer here...
+      but something else that could be more useful...*/}
+      <Footer />
     </div>
   )
 }
