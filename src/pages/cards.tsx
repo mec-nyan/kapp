@@ -3,8 +3,11 @@ import Card from '../features/cards/components/card'
 import KanaTable from '../kana/kanas'
 import './cards.css'
 import Footer from '../features/shared/components/footer'
+import { useMode } from '../hooks/useMode'
 
 export default function Cards() {
+  const { mode } = useMode()
+
   const keys = [...KanaTable.keys()]
   const [rowIdx, setRowIdx] = useState(0)
   const [kanaIdx, setKanaIdx] = useState(0)
@@ -93,12 +96,15 @@ export default function Cards() {
   const prevRowIdx = rowIdx > 0 ? rowIdx - 1 : keys.length - 1
   const nextRowIdx = rowIdx < keys.length - 1 ? rowIdx + 1 : 0
 
-  const prevRowLabel = KanaTable.get(keys[prevRowIdx])!.Basic.Monographs.at(
-    0
-  )!.hg
-  const nextRowLabel = KanaTable.get(keys[nextRowIdx])!.Basic.Monographs.at(
-    0
-  )!.hg
+  const prevRowLabel =
+    mode === 'hiragana'
+      ? KanaTable.get(keys[prevRowIdx])!.Basic.Monographs.at(0)!.hg
+      : KanaTable.get(keys[prevRowIdx])!.Basic.Monographs.at(0)!.kk
+
+  const nextRowLabel =
+    mode === 'hiragana'
+      ? KanaTable.get(keys[nextRowIdx])!.Basic.Monographs.at(0)!.hg
+      : KanaTable.get(keys[nextRowIdx])!.Basic.Monographs.at(0)!.kk
 
   return (
     <div id='cards-page'>

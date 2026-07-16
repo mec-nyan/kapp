@@ -41,7 +41,7 @@ const KanaRows = new Map<string, KanaRow>([
           kk: {
             jap: examples.katakana.i.jap,
             rmj: examples.katakana.i.rmj,
-            picture: examples.katakana.a.picture,
+            picture: examples.katakana.i.picture,
           },
         },
       },
