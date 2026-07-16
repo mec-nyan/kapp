@@ -1,46 +1,70 @@
 import { NavLink } from 'react-router'
 import './chart.css'
-import type { kanaKind } from '../types/kana'
 import KanaTable from '../kana/kanas'
 import { inKana } from '../kana/kanas'
 import { toRomajiFormmated } from '../kana/romaji'
+import { useMode } from '../hooks/useMode'
 
-interface ChartProps {
-  kana: kanaKind
-}
+export default function Chart() {
+  const { mode } = useMode()
 
-export default function Chart({ kana }: ChartProps) {
   const keys = [...KanaTable.keys()]
 
   const cells = []
 
-  for (const key of keys) {
-    const kanas = KanaTable.get(key)!.Basic.Monographs
-    for (const kr of kanas) {
-      if (kr) {
-        cells.push(
-          <div className='kana-cell'>
-            <div className='kana-line'>
-              <div className='hiragana'>{kr.hg}</div>
-              <div className='katakana'>{kr.kk}</div>
+  if (mode === 'hiragana') {
+    for (const key of keys) {
+      const kanas = KanaTable.get(key)!.Basic.Monographs
+      for (const kr of kanas) {
+        if (kr) {
+          cells.push(
+            <div className='kana-cell'>
+              <div className='kana-line'>
+                <div className='hiragana'>{kr.hg}</div>
+                <div className='katakana'>{kr.kk}</div>
+              </div>
+              <div className='picture'>{kr.examples.hg.picture}</div>
+              <div className='word'>{kr.examples.hg.jap}</div>
+              <div className='romaji'>
+                {toRomajiFormmated(kr.examples.hg.jap).replaceAll('/', '')}
+              </div>
             </div>
-            <div className='picture'>{kr.examples.hg.picture}</div>
-            <div className='word'>{kr.examples.hg.jap}</div>
-            <div className='romaji'>
-              {toRomajiFormmated(kr.examples.hg.jap).replaceAll('/', '')}
+          )
+        } else {
+          cells.push(<div className='kana-cell empty'></div>)
+        }
+      }
+    }
+  } else {
+    for (const key of keys) {
+      const kanas = KanaTable.get(key)!.Basic.Monographs
+      for (const kr of kanas) {
+        if (kr) {
+          cells.push(
+            <div className='kana-cell'>
+              <div className='kana-line'>
+                <div className='hiragana'>{kr.kk}</div>
+                <div className='katakana'>{kr.hg}</div>
+              </div>
+              <div className='picture'>{kr.examples.hg.picture}</div>
+              <div className='word'>{kr.examples.kk.jap}</div>
+              <div className='romaji'>
+                {toRomajiFormmated(kr.examples.hg.jap).replaceAll('/', '')}
+              </div>
             </div>
-          </div>
-        )
-      } else {
-        cells.push(<div className='kana-cell empty'></div>)
+          )
+        } else {
+          cells.push(<div className='kana-cell empty'></div>)
+        }
       }
     }
   }
+
   return (
     <div id='chart-container'>
       <div className='title'>
-        <span>{inKana(kana)}</span>
-        <span>{kana.charAt(0).toUpperCase() + kana.slice(1)}</span>
+        <span>{inKana(mode)}</span>
+        <span>{mode.charAt(0).toUpperCase() + mode.slice(1)}</span>
       </div>
 
       <div className='chart'>{cells}</div>
