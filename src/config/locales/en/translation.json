@@ -1,4 +1,33 @@
 {
+  "menu": {
+    "cards": {
+      "title": "Cards",
+      "desc": "Practise on glyph at a time."
+    },
+    "chart": {
+      "title": "Chart",
+      "desc": {
+        "hg": "Full Hiragana chart.",
+        "kk": "Full Katakana chart."
+      }
+    },
+    "drill": {
+      "title": "Drill",
+      "desc": "Challenge yourself and see how much you've learned."
+    },
+    "help": {
+      "title": "Help",
+      "desc": ""
+    },
+    "about": {
+      "title": "About",
+      "desc": ""
+    },
+    "coffee": {
+      "title": "Coffee",
+      "desc": "Buy me a coffee ☕"
+    }
+  },
   "footer": {
     "made_with": "Made with",
     "by": "by"

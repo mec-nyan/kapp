@@ -1,4 +1,33 @@
 {
+  "menu": {
+    "cards": {
+      "title": "Cartas",
+      "desc": "Practica un kana a la vez."
+    },
+    "chart": {
+      "title": "Tabla",
+      "desc": {
+        "hg": "Tabla completa Hiragana.",
+        "kk": "Tabla completa Katakana."
+      }
+    },
+    "drill": {
+      "title": "Práctica",
+      "desc": "¡Pon a prueba lo que has aprendido!"
+    },
+    "help": {
+      "title": "Ayuda",
+      "desc": ""
+    },
+    "about": {
+      "title": "Acerca de",
+      "desc": ""
+    },
+    "coffee": {
+      "title": "Cafecito",
+      "desc": "Invitarme un café ☕"
+    }
+  },
   "footer": {
     "made_with": "Hecho con",
     "by": "por"
