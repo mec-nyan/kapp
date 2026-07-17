@@ -1,5 +1,5 @@
 .menu-button-outer {
-  width: 64vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,5 +132,11 @@
 
   * .button-go {
     background-color: var(--yellow);
+  }
+}
+
+@media (min-width: 480px) {
+  .menu-button-outer {
+    width: 300px;
   }
 }
